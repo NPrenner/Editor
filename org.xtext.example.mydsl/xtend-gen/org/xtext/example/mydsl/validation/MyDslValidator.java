@@ -506,7 +506,7 @@ public class MyDslValidator extends AbstractMyDslValidator {
     TypeDefinition _type = systemtype.getType();
     EClass _eClass = _type.eClass();
     String _name = _eClass.getName();
-    boolean _equals = _name.equals("SystemDefinition");
+    boolean _equals = _name.equals("Systemtype");
     boolean _not = (!_equals);
     if (_not) {
       this.error("Object must be any \"System\"", MyDslPackage.Literals.OBJECT__TYPE, MyDslValidator.INVALID_NAME);
@@ -519,7 +519,7 @@ public class MyDslValidator extends AbstractMyDslValidator {
     TypeDefinition _type = roletype.getType();
     EClass _eClass = _type.eClass();
     String _name = _eClass.getName();
-    boolean _equals = _name.equals("RoleDefinition");
+    boolean _equals = _name.equals("Roletype");
     boolean _not = (!_equals);
     if (_not) {
       this.error("Object must be any \"Role\"", MyDslPackage.Literals.OBJECT__TYPE, MyDslValidator.INVALID_NAME);
@@ -532,7 +532,7 @@ public class MyDslValidator extends AbstractMyDslValidator {
     TypeDefinition _type = datatype.getType();
     EClass _eClass = _type.eClass();
     String _name = _eClass.getName();
-    boolean _equals = _name.equals("DataDefinition");
+    boolean _equals = _name.equals("Datatype");
     boolean _not = (!_equals);
     if (_not) {
       this.error("Object must be any \"Data\"", MyDslPackage.Literals.OBJECT__TYPE, MyDslValidator.INVALID_NAME);

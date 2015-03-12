@@ -275,21 +275,21 @@ class MyDslValidator extends AbstractMyDslValidator {
 	@Check
 	def checkSystemType(org.xtext.example.mydsl.myDsl.System system){
 		var systemtype = system as org.xtext.example.mydsl.myDsl.Object
- 		if(!systemtype.type.eClass.name.equals('SystemDefinition') )
+ 		if(!systemtype.type.eClass.name.equals('Systemtype') )
  				error('Object must be any "System"', MyDslPackage.Literals.OBJECT__TYPE,INVALID_NAME)
 	}
 	
 	@Check
 	def checkRoleType(org.xtext.example.mydsl.myDsl.Role role){
 		var roletype = role as org.xtext.example.mydsl.myDsl.Object
- 		if(!roletype.type.eClass.name.equals('RoleDefinition') )
+ 		if(!roletype.type.eClass.name.equals('Roletype') )
  				error('Object must be any "Role"', MyDslPackage.Literals.OBJECT__TYPE,INVALID_NAME)
 	}
 	
 	@Check
 	def checkDataType(org.xtext.example.mydsl.myDsl.Data data){
 		var datatype = data as org.xtext.example.mydsl.myDsl.Object
- 		if(!datatype.type.eClass.name.equals('DataDefinition') )
+ 		if(!datatype.type.eClass.name.equals('Datatype') )
  				error('Object must be any "Data"', MyDslPackage.Literals.OBJECT__TYPE,INVALID_NAME)
 	}
 	
