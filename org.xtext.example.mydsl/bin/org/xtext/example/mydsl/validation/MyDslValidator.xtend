@@ -46,7 +46,14 @@ class MyDslValidator extends AbstractMyDslValidator {
 //		}
 //	}
 
-// Überprüfung der Parameter bei einer Communication.
+/*
+ * Hier wird der getippte Code der Sprache überprüft. Der Methodenname gibt immer an an welcher Stelle in der Grammatik der Code
+   überprüft wird. Die Error-Meldung gibt an, was übeprüft wurde.
+ * 
+ */
+
+
+
 	 @Check
 	def checkCommunicationParameter(Communication communication){
 		val parameterMList = communication.parameter
@@ -79,7 +86,7 @@ class MyDslValidator extends AbstractMyDslValidator {
 	}
 	
 
-	// Überprüfe, dass Sender und Receiver nicht die gleich Role ist
+
 	@Check
 	def checkCommunicationReceiver(Communication communication){
 		if(communication.sender.name.equals(communication.receiver.name))

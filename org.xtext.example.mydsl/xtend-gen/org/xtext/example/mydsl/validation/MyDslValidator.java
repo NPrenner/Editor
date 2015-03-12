@@ -54,6 +54,10 @@ public class MyDslValidator extends AbstractMyDslValidator {
   
   public final static String MISSING = "missing";
   
+  /**
+   * Hier wird der getippte Code der Sprache überprüft. Der Methodenname gibt immer an an welcher Stelle in der Grammatik der Code
+   * überprüft wird. Die Error-Meldung gibt an, was übeprüft wurde.
+   */
   @Check
   public void checkCommunicationParameter(final Communication communication) {
     final EList<org.xtext.example.mydsl.myDsl.Object> parameterMList = communication.getParameter();
