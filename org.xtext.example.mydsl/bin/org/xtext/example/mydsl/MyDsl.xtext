@@ -1,0 +1,221 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+Domainmodel:
+ 	(element += (Interview | TypeDefinition))?
+ 	;
+
+TypeDefinition:
+	 Systemtype | ChannelDefintion | Datatype | Roletype
+;
+
+Datatype:
+	'package' package = 'DataPackage' ';'
+	'Datatype' name=ID '{'
+	
+	'}'
+;
+
+Systemtype:
+	
+	'package' package = 'SystemPackage' ';'
+	'Systemtype' name=ID '{'
+		functions += Function*
+		
+	'}'
+;
+
+ChannelDefintion:
+	'package' package = 'ChannelPackage' ';'
+	
+	(type = ('asynchronous' | 'synchronous') )? 'Channel' name =ID '{'
+			
+			
+	'}'
+;
+
+ Roletype:
+	'package' package = 'RolePackage' ';'
+	'Roletype' name=ID '{'
+		state += State*
+		tasks += Task*
+		messages += Message*
+	'}'
+;
+
+State:
+	'state' name=ID ';'
+;
+
+Task:
+	'task'  name= ID '(' (parameter += [Parameter] (',' parameter += [Parameter] )*)?  ')' ';'
+	;
+	
+	Message:
+	'message'  name= ID '(' (parameter += [Parameter] ("," parameter += [Parameter] )*)? ')' ';'
+;
+
+Function:
+	'function'  name=ID '(' (parameter += [Parameter] (',' parameter += [Parameter] )*)? ')'  (returnValue ?='returns' (returnArgument = [TypeDefinition])? (returnBool = 'boolean')?)? ';'
+;
+ 	
+
+Interview:
+	'package' package = 'InterviewPackage' ';'
+	
+	
+	'Interview' name=STRING  '{'
+		'main' mainPlayer = Role
+		objects += Object*
+		
+		process += BusinessProcess*
+	'}'
+;
+
+Object:
+	Data | Role | System | Boolean 
+;
+
+Boolean:
+	'boolean' (type=[TypeDefinition])? name=ID ';'
+;
+
+
+System:
+	'system' type=[TypeDefinition] name=ID ';'
+;
+
+
+Data:
+	'data' type = [TypeDefinition] name=ID ';'
+;
+
+Role:
+	RoleType=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID  ";"
+;
+
+
+Parameter:
+	TypeDefinition
+;
+
+BusinessProcess:
+	'process' name= STRING '{'
+			(element = ProcessStartElements)?	
+	'}'
+ ;
+
+ProcessStartElements:
+	 StartTimeAlternative | Chart | StartAlternative
+;
+
+Chart:{Chart}
+	'start' '{'
+		startElements += ProcessChartElements*
+	'}'
+	'followed' '{'
+		followedElements += ProcessElements*
+	'}'
+;
+
+StartTimeAlternative:{StarTimeAlternative}
+	'mostly' '{'
+			mostlyAlternative += ProcessStartElements?
+	'}'
+	'sometimes' '{'
+			sometimesAlternative += ProcessStartElements?
+	'}'
+	('sometimes' '{' sometimesAlternative += ProcessStartElements? '}')*
+	
+;
+
+TimeAlternative:{TimeAlternative}
+	'mostly' '{'
+			 mostlyAlternative += ProcessElements*
+	'}'
+	'sometimes' '{'
+			 sometimeAlternative+= ProcessElements*
+	'}'
+	('sometimes' '{'  sometimeAlternative += ProcessElements* '}')*
+;
+
+
+StartAlternative:{StartAlternative}
+	'alt' '{'
+		alternative += ProcessStartElements?
+	'}'
+	'or' '{'
+	 	alternative += ProcessStartElements?
+	'}'
+	('or' '{' alternative += ProcessStartElements? '}')*
+;
+
+Alternative:{Alternative}
+	'alt' '{'
+		alternative += ProcessElements*
+	'}'
+	'or' '{'
+	 	alternative += ProcessElements*
+	'}'
+	( 'or' '{' alternative += ProcessElements*'}')*
+;
+
+ProcessElements:
+	Communication | Activity | Alternative | TimeAlternative | IFQuery | Systemwork | Loop
+;
+
+ProcessChartElements:
+	Communication | Activity | Alternative | TimeAlternative | Systemwork
+;
+
+Loop:
+	'loop''[' (uncounter = '*' | counter = INT) ']' '{'
+		elements += ProcessElements*
+	'}'
+;
+
+IFQuery:
+	'if' '(' queries += QueryTypes ( ('||'| '&&' ) queries += QueryTypes)* ')' '{'
+		elements += ProcessElements*
+	'}' 
+	('else' '{'  elements += ProcessElements* '}')?
+;
+
+QueryTypes:
+	Query | BraceQuery 
+;
+
+Query:
+	DataQuery | PlayerQuery | BooleanQuery
+;
+
+BooleanQuery:
+	('!')? booleanValue = [Boolean] ('is' boolean = ('true' | 'false'))?
+;
+
+DataQuery:
+	(exclamation ?= '!')? objectOne= [Object] condition= ('!=' | '==') objectTwo=[Object]
+;
+
+BraceQuery:
+  ('!')?	'(' queries +=  QueryTypes ( ('||'| '&&' ) queries += QueryTypes )* ')'
+;
+
+PlayerQuery:
+  ('!')? player=[Role] '.' status = [State] ('is' boolean = ('true' | 'false'))? 
+;
+
+ Communication:
+ 	(importance = ('im' | 'unim'))? sender=[Object]  execution= ("can" | "must") "send" "to" receiver = [Role] "." message = [Message] "(" (parameter += [Object] ("," parameter += [Object])*)? ")" ('via' channel=[ChannelDefintion])? ";"
+ ;
+
+Activity:
+	(importance = ('im' | 'unim'))? player=[Role]   execution = ('can' | 'must') 'do' task= [Task] '(' (parameter += [Object] (',' parameter += [Object])*)? ')' ';'
+	 ;
+
+Systemwork:
+	(returnObject = [Object] '=')? (importance = ('im' | 'unim'))? player =[Role] execution =('can' | 'must')  'systemwork'  system = [System] '.' function = [Function] '(' (parameter += [Object] ("," parameter += [Object])*)? ")"  ";"
+;
+
+terminal ID : ('a'..'z' | 'A'..'Z'| 'ä' | 'ö' | 'ü' | 'ß' | '_')*;
