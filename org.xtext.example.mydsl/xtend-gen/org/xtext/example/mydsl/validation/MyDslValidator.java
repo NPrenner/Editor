@@ -63,14 +63,14 @@ public class MyDslValidator extends AbstractMyDslValidator {
     int _length_1 = ((Object[])Conversions.unwrapArray(parameterList, Object.class)).length;
     boolean _greaterThan = (_length > _length_1);
     if (_greaterThan) {
-      this.error("too many parameters", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
+      this.error("Too many parameters!", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
       return;
     }
     int _length_2 = ((Object[])Conversions.unwrapArray(parameterMList, Object.class)).length;
     int _length_3 = ((Object[])Conversions.unwrapArray(parameterList, Object.class)).length;
     boolean _lessThan = (_length_2 < _length_3);
     if (_lessThan) {
-      this.error("missing parameter", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
+      this.error("Missing parameter!", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
       return;
     }
     for (int i = 0; (i < ((Object[])Conversions.unwrapArray(parameterMList, Object.class)).length); i++) {
@@ -90,7 +90,7 @@ public class MyDslValidator extends AbstractMyDslValidator {
         boolean _checkName = this.checkName(_name, _name_1);
         boolean _not = (!_checkName);
         if (_not) {
-          this.error("wrong parameter", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
+          this.error("Wrong parameter!", MyDslPackage.Literals.COMMUNICATION__PARAMETER, MyDslValidator.INVALID_PARAMETER);
         }
       }
     }
@@ -115,7 +115,7 @@ public class MyDslValidator extends AbstractMyDslValidator {
     String _name_1 = _receiver.getName();
     boolean _equals = _name.equals(_name_1);
     if (_equals) {
-      this.error("Transmitter and receiver can not be the same!", MyDslPackage.Literals.COMMUNICATION__RECEIVER, MyDslValidator.INVALID_OTHER_ROLE);
+      this.error("Sender and receiver can not be the same!", MyDslPackage.Literals.COMMUNICATION__RECEIVER, MyDslValidator.INVALID_OTHER_ROLE);
     }
   }
   

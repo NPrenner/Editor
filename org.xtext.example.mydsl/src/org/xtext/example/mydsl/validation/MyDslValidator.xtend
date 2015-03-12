@@ -46,16 +46,17 @@ class MyDslValidator extends AbstractMyDslValidator {
 //		}
 //	}
 
+// Überprüfung der Parameter bei einer Communication.
 	 @Check
 	def checkCommunicationParameter(Communication communication){
 		val parameterMList = communication.parameter
 		val parameterList = communication.message.parameter
 		if(parameterMList.length > parameterList.length){
-			error('too many parameters', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
+			error('Too many parameters!', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
 			return
 		}
 		if(parameterMList.length < parameterList.length){
-			error('missing parameter', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
+			error('Missing parameter!', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
 			return
 		}	
 		for(var i = 0; i < parameterMList.length; i++){
@@ -65,7 +66,7 @@ class MyDslValidator extends AbstractMyDslValidator {
 			}
 			
 			if(!checkName(parameter.name , parameterMList.get(i).type.name)){
-				error('wrong parameter', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
+				error('Wrong parameter!', MyDslPackage.Literals.COMMUNICATION__PARAMETER,INVALID_PARAMETER) 
 			}	
 		}
 	}
@@ -78,11 +79,11 @@ class MyDslValidator extends AbstractMyDslValidator {
 	}
 	
 
-	
+	// Überprüfe, dass Sender und Receiver nicht die gleich Role ist
 	@Check
 	def checkCommunicationReceiver(Communication communication){
 		if(communication.sender.name.equals(communication.receiver.name))
-			error('Transmitter and receiver can not be the same!', MyDslPackage.Literals.COMMUNICATION__RECEIVER,INVALID_OTHER_ROLE) 	
+			error('Sender and receiver can not be the same!', MyDslPackage.Literals.COMMUNICATION__RECEIVER,INVALID_OTHER_ROLE) 	
 	}
 	
 	@Check 

@@ -79,11 +79,11 @@ class MyDslValidator extends AbstractMyDslValidator {
 	}
 	
 
-	
+	// Überprüfe, dass Sender und Receiver nicht die gleich Role ist
 	@Check
 	def checkCommunicationReceiver(Communication communication){
 		if(communication.sender.name.equals(communication.receiver.name))
-			error('Transmitter and receiver can not be the same!', MyDslPackage.Literals.COMMUNICATION__RECEIVER,INVALID_OTHER_ROLE) 	
+			error('Sender and receiver can not be the same!', MyDslPackage.Literals.COMMUNICATION__RECEIVER,INVALID_OTHER_ROLE) 	
 	}
 	
 	@Check 
