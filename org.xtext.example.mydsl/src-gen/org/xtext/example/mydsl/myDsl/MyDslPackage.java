@@ -740,13 +740,13 @@ public interface MyDslPackage extends EPackage
   int ROLE__NAME = OBJECT__NAME;
 
   /**
-   * The feature id for the '<em><b>Role Type</b></em>' attribute.
+   * The feature id for the '<em><b>Rolekind</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ROLE__ROLE_TYPE = OBJECT_FEATURE_COUNT + 0;
+  int ROLE__ROLEKIND = OBJECT_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Role</em>' class.
@@ -1989,15 +1989,15 @@ public interface MyDslPackage extends EPackage
   EClass getRole();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Role#getRoleType <em>Role Type</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Role#getRolekind <em>Rolekind</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Role Type</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Role#getRoleType()
+   * @return the meta object for the attribute '<em>Rolekind</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Role#getRolekind()
    * @see #getRole()
    * @generated
    */
-  EAttribute getRole_RoleType();
+  EAttribute getRole_Rolekind();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.Parameter <em>Parameter</em>}'.
@@ -3087,12 +3087,12 @@ public interface MyDslPackage extends EPackage
     EClass ROLE = eINSTANCE.getRole();
 
     /**
-     * The meta object literal for the '<em><b>Role Type</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Rolekind</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute ROLE__ROLE_TYPE = eINSTANCE.getRole_RoleType();
+    EAttribute ROLE__ROLEKIND = eINSTANCE.getRole_Rolekind();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.ParameterImpl <em>Parameter</em>}' class.

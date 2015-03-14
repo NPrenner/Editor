@@ -41,7 +41,7 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTypeDefinitionAccess().getAlternatives(), "rule__TypeDefinition__Alternatives");
 					put(grammarAccess.getChannelDefintionAccess().getTypeAlternatives_3_0(), "rule__ChannelDefintion__TypeAlternatives_3_0");
 					put(grammarAccess.getObjectAccess().getAlternatives(), "rule__Object__Alternatives");
-					put(grammarAccess.getRoleAccess().getRoleTypeAlternatives_0_0(), "rule__Role__RoleTypeAlternatives_0_0");
+					put(grammarAccess.getRoleAccess().getRolekindAlternatives_0_0(), "rule__Role__RolekindAlternatives_0_0");
 					put(grammarAccess.getProcessStartElementsAccess().getAlternatives(), "rule__ProcessStartElements__Alternatives");
 					put(grammarAccess.getProcessElementsAccess().getAlternatives(), "rule__ProcessElements__Alternatives");
 					put(grammarAccess.getProcessChartElementsAccess().getAlternatives(), "rule__ProcessChartElements__Alternatives");
@@ -149,7 +149,7 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getSystemAccess().getNameAssignment_2(), "rule__System__NameAssignment_2");
 					put(grammarAccess.getDataAccess().getTypeAssignment_1(), "rule__Data__TypeAssignment_1");
 					put(grammarAccess.getDataAccess().getNameAssignment_2(), "rule__Data__NameAssignment_2");
-					put(grammarAccess.getRoleAccess().getRoleTypeAssignment_0(), "rule__Role__RoleTypeAssignment_0");
+					put(grammarAccess.getRoleAccess().getRolekindAssignment_0(), "rule__Role__RolekindAssignment_0");
 					put(grammarAccess.getRoleAccess().getTypeAssignment_1(), "rule__Role__TypeAssignment_1");
 					put(grammarAccess.getRoleAccess().getNameAssignment_2(), "rule__Role__NameAssignment_2");
 					put(grammarAccess.getBusinessProcessAccess().getNameAssignment_1(), "rule__BusinessProcess__NameAssignment_1");

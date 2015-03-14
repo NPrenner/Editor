@@ -474,7 +474,7 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     ((RoleType='insideRole' | RoleType='outsideRole') type=[TypeDefinition|ID] name=ID)
+	 *     ((rolekind='insideRole' | rolekind='outsideRole') type=[TypeDefinition|ID] name=ID)
 	 */
 	protected void sequence_Role(EObject context, Role semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

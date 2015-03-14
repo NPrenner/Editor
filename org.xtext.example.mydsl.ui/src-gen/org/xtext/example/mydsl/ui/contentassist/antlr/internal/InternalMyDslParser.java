@@ -3348,9 +3348,9 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Object__Alternatives"
 
 
-    // $ANTLR start "rule__Role__RoleTypeAlternatives_0_0"
-    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1186:1: rule__Role__RoleTypeAlternatives_0_0 : ( ( 'insideRole' ) | ( 'outsideRole' ) );
-    public final void rule__Role__RoleTypeAlternatives_0_0() throws RecognitionException {
+    // $ANTLR start "rule__Role__RolekindAlternatives_0_0"
+    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1186:1: rule__Role__RolekindAlternatives_0_0 : ( ( 'insideRole' ) | ( 'outsideRole' ) );
+    public final void rule__Role__RolekindAlternatives_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3378,9 +3378,9 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
                     // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1191:1: ( 'insideRole' )
                     // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1192:1: 'insideRole'
                     {
-                     before(grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0()); 
-                    match(input,13,FOLLOW_13_in_rule__Role__RoleTypeAlternatives_0_02504); 
-                     after(grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0()); 
+                     before(grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0()); 
+                    match(input,13,FOLLOW_13_in_rule__Role__RolekindAlternatives_0_02504); 
+                     after(grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0()); 
 
                     }
 
@@ -3393,9 +3393,9 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
                     // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1199:6: ( 'outsideRole' )
                     // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:1200:1: 'outsideRole'
                     {
-                     before(grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1()); 
-                    match(input,14,FOLLOW_14_in_rule__Role__RoleTypeAlternatives_0_02524); 
-                     after(grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1()); 
+                     before(grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1()); 
+                    match(input,14,FOLLOW_14_in_rule__Role__RolekindAlternatives_0_02524); 
+                     after(grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1()); 
 
                     }
 
@@ -3416,7 +3416,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Role__RoleTypeAlternatives_0_0"
+    // $ANTLR end "rule__Role__RolekindAlternatives_0_0"
 
 
     // $ANTLR start "rule__ProcessStartElements__Alternatives"
@@ -12558,31 +12558,31 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Role__Group__0__Impl"
-    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4666:1: rule__Role__Group__0__Impl : ( ( rule__Role__RoleTypeAssignment_0 ) ) ;
+    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4666:1: rule__Role__Group__0__Impl : ( ( rule__Role__RolekindAssignment_0 ) ) ;
     public final void rule__Role__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4670:1: ( ( ( rule__Role__RoleTypeAssignment_0 ) ) )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4671:1: ( ( rule__Role__RoleTypeAssignment_0 ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4670:1: ( ( ( rule__Role__RolekindAssignment_0 ) ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4671:1: ( ( rule__Role__RolekindAssignment_0 ) )
             {
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4671:1: ( ( rule__Role__RoleTypeAssignment_0 ) )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4672:1: ( rule__Role__RoleTypeAssignment_0 )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4671:1: ( ( rule__Role__RolekindAssignment_0 ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4672:1: ( rule__Role__RolekindAssignment_0 )
             {
-             before(grammarAccess.getRoleAccess().getRoleTypeAssignment_0()); 
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4673:1: ( rule__Role__RoleTypeAssignment_0 )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4673:2: rule__Role__RoleTypeAssignment_0
+             before(grammarAccess.getRoleAccess().getRolekindAssignment_0()); 
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4673:1: ( rule__Role__RolekindAssignment_0 )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:4673:2: rule__Role__RolekindAssignment_0
             {
-            pushFollow(FOLLOW_rule__Role__RoleTypeAssignment_0_in_rule__Role__Group__0__Impl9481);
-            rule__Role__RoleTypeAssignment_0();
+            pushFollow(FOLLOW_rule__Role__RolekindAssignment_0_in_rule__Role__Group__0__Impl9481);
+            rule__Role__RolekindAssignment_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoleAccess().getRoleTypeAssignment_0()); 
+             after(grammarAccess.getRoleAccess().getRolekindAssignment_0()); 
 
             }
 
@@ -28013,32 +28013,32 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Data__NameAssignment_2"
 
 
-    // $ANTLR start "rule__Role__RoleTypeAssignment_0"
-    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10713:1: rule__Role__RoleTypeAssignment_0 : ( ( rule__Role__RoleTypeAlternatives_0_0 ) ) ;
-    public final void rule__Role__RoleTypeAssignment_0() throws RecognitionException {
+    // $ANTLR start "rule__Role__RolekindAssignment_0"
+    // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10713:1: rule__Role__RolekindAssignment_0 : ( ( rule__Role__RolekindAlternatives_0_0 ) ) ;
+    public final void rule__Role__RolekindAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10717:1: ( ( ( rule__Role__RoleTypeAlternatives_0_0 ) ) )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10718:1: ( ( rule__Role__RoleTypeAlternatives_0_0 ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10717:1: ( ( ( rule__Role__RolekindAlternatives_0_0 ) ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10718:1: ( ( rule__Role__RolekindAlternatives_0_0 ) )
             {
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10718:1: ( ( rule__Role__RoleTypeAlternatives_0_0 ) )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10719:1: ( rule__Role__RoleTypeAlternatives_0_0 )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10718:1: ( ( rule__Role__RolekindAlternatives_0_0 ) )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10719:1: ( rule__Role__RolekindAlternatives_0_0 )
             {
-             before(grammarAccess.getRoleAccess().getRoleTypeAlternatives_0_0()); 
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10720:1: ( rule__Role__RoleTypeAlternatives_0_0 )
-            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10720:2: rule__Role__RoleTypeAlternatives_0_0
+             before(grammarAccess.getRoleAccess().getRolekindAlternatives_0_0()); 
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10720:1: ( rule__Role__RolekindAlternatives_0_0 )
+            // ../org.xtext.example.mydsl.ui/src-gen/org/xtext/example/mydsl/ui/contentassist/antlr/internal/InternalMyDsl.g:10720:2: rule__Role__RolekindAlternatives_0_0
             {
-            pushFollow(FOLLOW_rule__Role__RoleTypeAlternatives_0_0_in_rule__Role__RoleTypeAssignment_021415);
-            rule__Role__RoleTypeAlternatives_0_0();
+            pushFollow(FOLLOW_rule__Role__RolekindAlternatives_0_0_in_rule__Role__RolekindAssignment_021415);
+            rule__Role__RolekindAlternatives_0_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getRoleAccess().getRoleTypeAlternatives_0_0()); 
+             after(grammarAccess.getRoleAccess().getRolekindAlternatives_0_0()); 
 
             }
 
@@ -28057,7 +28057,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Role__RoleTypeAssignment_0"
+    // $ANTLR end "rule__Role__RolekindAssignment_0"
 
 
     // $ANTLR start "rule__Role__TypeAssignment_1"
@@ -30825,8 +30825,8 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_ruleRole_in_rule__Object__Alternatives2437 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleSystem_in_rule__Object__Alternatives2454 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleBoolean_in_rule__Object__Alternatives2471 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Role__RoleTypeAlternatives_0_02504 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__Role__RoleTypeAlternatives_0_02524 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__Role__RolekindAlternatives_0_02504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Role__RolekindAlternatives_0_02524 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleStartTimeAlternative_in_rule__ProcessStartElements__Alternatives2558 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleChart_in_rule__ProcessStartElements__Alternatives2575 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleStartAlternative_in_rule__ProcessStartElements__Alternatives2592 = new BitSet(new long[]{0x0000000000000002L});
@@ -31133,7 +31133,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_26_in_rule__Data__Group__3__Impl9412 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Role__Group__0__Impl_in_rule__Role__Group__09451 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Role__Group__1_in_rule__Role__Group__09454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Role__RoleTypeAssignment_0_in_rule__Role__Group__0__Impl9481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Role__RolekindAssignment_0_in_rule__Role__Group__0__Impl9481 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Role__Group__1__Impl_in_rule__Role__Group__19511 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Role__Group__2_in_rule__Role__Group__19514 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Role__TypeAssignment_1_in_rule__Role__Group__1__Impl9541 = new BitSet(new long[]{0x0000000000000002L});
@@ -31638,7 +31638,7 @@ public class InternalMyDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_RULE_ID_in_rule__System__NameAssignment_221314 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Data__TypeAssignment_121349 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Data__NameAssignment_221384 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Role__RoleTypeAlternatives_0_0_in_rule__Role__RoleTypeAssignment_021415 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Role__RolekindAlternatives_0_0_in_rule__Role__RolekindAssignment_021415 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Role__TypeAssignment_121452 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Role__NameAssignment_221487 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_STRING_in_rule__BusinessProcess__NameAssignment_121518 = new BitSet(new long[]{0x0000000000000002L});

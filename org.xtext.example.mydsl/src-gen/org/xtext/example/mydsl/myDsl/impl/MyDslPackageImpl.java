@@ -799,7 +799,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getRole_RoleType()
+  public EAttribute getRole_Rolekind()
   {
     return (EAttribute)roleEClass.getEStructuralFeatures().get(0);
   }
@@ -1550,7 +1550,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     dataEClass = createEClass(DATA);
 
     roleEClass = createEClass(ROLE);
-    createEAttribute(roleEClass, ROLE__ROLE_TYPE);
+    createEAttribute(roleEClass, ROLE__ROLEKIND);
 
     parameterEClass = createEClass(PARAMETER);
 
@@ -1758,7 +1758,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     initEClass(dataEClass, Data.class, "Data", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(roleEClass, Role.class, "Role", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getRole_RoleType(), ecorePackage.getEString(), "RoleType", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRole_Rolekind(), ecorePackage.getEString(), "rolekind", null, 0, 1, Role.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(parameterEClass, Parameter.class, "Parameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

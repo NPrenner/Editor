@@ -11,7 +11,7 @@ package org.xtext.example.mydsl.myDsl;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Role#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Role#getRolekind <em>Rolekind</em>}</li>
  * </ul>
  * </p>
  *
@@ -22,29 +22,29 @@ package org.xtext.example.mydsl.myDsl;
 public interface Role extends org.xtext.example.mydsl.myDsl.Object
 {
   /**
-   * Returns the value of the '<em><b>Role Type</b></em>' attribute.
+   * Returns the value of the '<em><b>Rolekind</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Role Type</em>' attribute isn't clear,
+   * If the meaning of the '<em>Rolekind</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Role Type</em>' attribute.
-   * @see #setRoleType(String)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRole_RoleType()
+   * @return the value of the '<em>Rolekind</em>' attribute.
+   * @see #setRolekind(String)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRole_Rolekind()
    * @model
    * @generated
    */
-  String getRoleType();
+  String getRolekind();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Role#getRoleType <em>Role Type</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Role#getRolekind <em>Rolekind</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Role Type</em>' attribute.
-   * @see #getRoleType()
+   * @param value the new value of the '<em>Rolekind</em>' attribute.
+   * @see #getRolekind()
    * @generated
    */
-  void setRoleType(String value);
+  void setRolekind(String value);
 
 } // Role

@@ -3105,12 +3105,12 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRole"
-    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1308:1: ruleRole returns [EObject current=null] : ( ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' ) ;
+    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1308:1: ruleRole returns [EObject current=null] : ( ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' ) ;
     public final EObject ruleRole() throws RecognitionException {
         EObject current = null;
 
-        Token lv_RoleType_0_1=null;
-        Token lv_RoleType_0_2=null;
+        Token lv_rolekind_0_1=null;
+        Token lv_rolekind_0_2=null;
         Token otherlv_1=null;
         Token lv_name_2_0=null;
         Token otherlv_3=null;
@@ -3118,19 +3118,19 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1311:28: ( ( ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:1: ( ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1311:28: ( ( ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:1: ( ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:1: ( ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:2: ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';'
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:1: ( ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:2: ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) ) ( (otherlv_1= RULE_ID ) ) ( (lv_name_2_0= RULE_ID ) ) otherlv_3= ';'
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:2: ( ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1313:1: ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1312:2: ( ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1313:1: ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1313:1: ( (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1314:1: (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1313:1: ( (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1314:1: (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1314:1: (lv_RoleType_0_1= 'insideRole' | lv_RoleType_0_2= 'outsideRole' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1314:1: (lv_rolekind_0_1= 'insideRole' | lv_rolekind_0_2= 'outsideRole' )
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -3148,33 +3148,33 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             }
             switch (alt23) {
                 case 1 :
-                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1315:3: lv_RoleType_0_1= 'insideRole'
+                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1315:3: lv_rolekind_0_1= 'insideRole'
                     {
-                    lv_RoleType_0_1=(Token)match(input,39,FOLLOW_39_in_ruleRole2955); 
+                    lv_rolekind_0_1=(Token)match(input,39,FOLLOW_39_in_ruleRole2955); 
 
-                            newLeafNode(lv_RoleType_0_1, grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0());
+                            newLeafNode(lv_rolekind_0_1, grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0());
                         
 
                     	        if (current==null) {
                     	            current = createModelElement(grammarAccess.getRoleRule());
                     	        }
-                           		setWithLastConsumed(current, "RoleType", lv_RoleType_0_1, null);
+                           		setWithLastConsumed(current, "rolekind", lv_rolekind_0_1, null);
                     	    
 
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1327:8: lv_RoleType_0_2= 'outsideRole'
+                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:1327:8: lv_rolekind_0_2= 'outsideRole'
                     {
-                    lv_RoleType_0_2=(Token)match(input,40,FOLLOW_40_in_ruleRole2984); 
+                    lv_rolekind_0_2=(Token)match(input,40,FOLLOW_40_in_ruleRole2984); 
 
-                            newLeafNode(lv_RoleType_0_2, grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1());
+                            newLeafNode(lv_rolekind_0_2, grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1());
                         
 
                     	        if (current==null) {
                     	            current = createModelElement(grammarAccess.getRoleRule());
                     	        }
-                           		setWithLastConsumed(current, "RoleType", lv_RoleType_0_2, null);
+                           		setWithLastConsumed(current, "rolekind", lv_rolekind_0_2, null);
                     	    
 
                     }

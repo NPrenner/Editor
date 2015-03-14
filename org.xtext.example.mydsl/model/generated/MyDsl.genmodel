@@ -59,7 +59,7 @@
     <genClasses ecoreClass="MyDsl.ecore#//System"/>
     <genClasses ecoreClass="MyDsl.ecore#//Data"/>
     <genClasses ecoreClass="MyDsl.ecore#//Role">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MyDsl.ecore#//Role/RoleType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MyDsl.ecore#//Role/rolekind"/>
     </genClasses>
     <genClasses ecoreClass="MyDsl.ecore#//Parameter"/>
     <genClasses ecoreClass="MyDsl.ecore#//BusinessProcess">

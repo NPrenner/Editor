@@ -1183,25 +1183,25 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Role__RoleTypeAlternatives_0_0
+rule__Role__RolekindAlternatives_0_0
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0()); }
+{ before(grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0()); }
 
 	'insideRole' 
 
-{ after(grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0()); }
+{ after(grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0()); }
 )
 
     |(
-{ before(grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1()); }
+{ before(grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1()); }
 
 	'outsideRole' 
 
-{ after(grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1()); }
+{ after(grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1()); }
 )
 
 ;
@@ -4669,9 +4669,9 @@ rule__Role__Group__0__Impl
     }
 :
 (
-{ before(grammarAccess.getRoleAccess().getRoleTypeAssignment_0()); }
-(rule__Role__RoleTypeAssignment_0)
-{ after(grammarAccess.getRoleAccess().getRoleTypeAssignment_0()); }
+{ before(grammarAccess.getRoleAccess().getRolekindAssignment_0()); }
+(rule__Role__RolekindAssignment_0)
+{ after(grammarAccess.getRoleAccess().getRolekindAssignment_0()); }
 )
 
 ;
@@ -10710,15 +10710,15 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Role__RoleTypeAssignment_0
+rule__Role__RolekindAssignment_0
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getRoleAccess().getRoleTypeAlternatives_0_0()); }
-(rule__Role__RoleTypeAlternatives_0_0)
-{ after(grammarAccess.getRoleAccess().getRoleTypeAlternatives_0_0()); }
+{ before(grammarAccess.getRoleAccess().getRolekindAlternatives_0_0()); }
+(rule__Role__RolekindAlternatives_0_0)
+{ after(grammarAccess.getRoleAccess().getRolekindAlternatives_0_0()); }
 )
 
 ;

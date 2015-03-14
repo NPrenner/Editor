@@ -64,7 +64,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//Object"/>
   <eClassifiers xsi:type="ecore:EClass" name="Data" eSuperTypes="#//Object"/>
   <eClassifiers xsi:type="ecore:EClass" name="Role" eSuperTypes="#//Object">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RoleType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rolekind" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Parameter"/>
   <eClassifiers xsi:type="ecore:EClass" name="BusinessProcess">

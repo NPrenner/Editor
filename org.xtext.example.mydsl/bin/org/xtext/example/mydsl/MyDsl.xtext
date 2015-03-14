@@ -92,7 +92,7 @@ Data:
 ;
 
 Role:
-	RoleType=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID  ";"
+	rolekind=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID  ";"
 ;
 
 

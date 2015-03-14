@@ -18,7 +18,7 @@ import org.xtext.example.mydsl.myDsl.Role;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.RoleImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.RoleImpl#getRolekind <em>Rolekind</em>}</li>
  * </ul>
  * </p>
  *
@@ -27,24 +27,24 @@ import org.xtext.example.mydsl.myDsl.Role;
 public class RoleImpl extends ObjectImpl implements Role
 {
   /**
-   * The default value of the '{@link #getRoleType() <em>Role Type</em>}' attribute.
+   * The default value of the '{@link #getRolekind() <em>Rolekind</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getRoleType()
+   * @see #getRolekind()
    * @generated
    * @ordered
    */
-  protected static final String ROLE_TYPE_EDEFAULT = null;
+  protected static final String ROLEKIND_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getRoleType() <em>Role Type</em>}' attribute.
+   * The cached value of the '{@link #getRolekind() <em>Rolekind</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getRoleType()
+   * @see #getRolekind()
    * @generated
    * @ordered
    */
-  protected String roleType = ROLE_TYPE_EDEFAULT;
+  protected String rolekind = ROLEKIND_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -72,9 +72,9 @@ public class RoleImpl extends ObjectImpl implements Role
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getRoleType()
+  public String getRolekind()
   {
-    return roleType;
+    return rolekind;
   }
 
   /**
@@ -82,12 +82,12 @@ public class RoleImpl extends ObjectImpl implements Role
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRoleType(String newRoleType)
+  public void setRolekind(String newRolekind)
   {
-    String oldRoleType = roleType;
-    roleType = newRoleType;
+    String oldRolekind = rolekind;
+    rolekind = newRolekind;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ROLE__ROLE_TYPE, oldRoleType, roleType));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ROLE__ROLEKIND, oldRolekind, rolekind));
   }
 
   /**
@@ -100,8 +100,8 @@ public class RoleImpl extends ObjectImpl implements Role
   {
     switch (featureID)
     {
-      case MyDslPackage.ROLE__ROLE_TYPE:
-        return getRoleType();
+      case MyDslPackage.ROLE__ROLEKIND:
+        return getRolekind();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -116,8 +116,8 @@ public class RoleImpl extends ObjectImpl implements Role
   {
     switch (featureID)
     {
-      case MyDslPackage.ROLE__ROLE_TYPE:
-        setRoleType((String)newValue);
+      case MyDslPackage.ROLE__ROLEKIND:
+        setRolekind((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -133,8 +133,8 @@ public class RoleImpl extends ObjectImpl implements Role
   {
     switch (featureID)
     {
-      case MyDslPackage.ROLE__ROLE_TYPE:
-        setRoleType(ROLE_TYPE_EDEFAULT);
+      case MyDslPackage.ROLE__ROLEKIND:
+        setRolekind(ROLEKIND_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -150,8 +150,8 @@ public class RoleImpl extends ObjectImpl implements Role
   {
     switch (featureID)
     {
-      case MyDslPackage.ROLE__ROLE_TYPE:
-        return ROLE_TYPE_EDEFAULT == null ? roleType != null : !ROLE_TYPE_EDEFAULT.equals(roleType);
+      case MyDslPackage.ROLE__ROLEKIND:
+        return ROLEKIND_EDEFAULT == null ? rolekind != null : !ROLEKIND_EDEFAULT.equals(rolekind);
     }
     return super.eIsSet(featureID);
   }
@@ -167,8 +167,8 @@ public class RoleImpl extends ObjectImpl implements Role
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (RoleType: ");
-    result.append(roleType);
+    result.append(" (rolekind: ");
+    result.append(rolekind);
     result.append(')');
     return result.toString();
   }

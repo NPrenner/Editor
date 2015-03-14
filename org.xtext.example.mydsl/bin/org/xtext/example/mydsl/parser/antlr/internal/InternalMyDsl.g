@@ -1312,28 +1312,28 @@ ruleRole returns [EObject current=null]
 ((
 (
 (
-		lv_RoleType_0_1=	'insideRole' 
+		lv_rolekind_0_1=	'insideRole' 
     {
-        newLeafNode(lv_RoleType_0_1, grammarAccess.getRoleAccess().getRoleTypeInsideRoleKeyword_0_0_0());
+        newLeafNode(lv_rolekind_0_1, grammarAccess.getRoleAccess().getRolekindInsideRoleKeyword_0_0_0());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getRoleRule());
 	        }
-       		setWithLastConsumed($current, "RoleType", lv_RoleType_0_1, null);
+       		setWithLastConsumed($current, "rolekind", lv_rolekind_0_1, null);
 	    }
 
-    |		lv_RoleType_0_2=	'outsideRole' 
+    |		lv_rolekind_0_2=	'outsideRole' 
     {
-        newLeafNode(lv_RoleType_0_2, grammarAccess.getRoleAccess().getRoleTypeOutsideRoleKeyword_0_0_1());
+        newLeafNode(lv_rolekind_0_2, grammarAccess.getRoleAccess().getRolekindOutsideRoleKeyword_0_0_1());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getRoleRule());
 	        }
-       		setWithLastConsumed($current, "RoleType", lv_RoleType_0_2, null);
+       		setWithLastConsumed($current, "rolekind", lv_rolekind_0_2, null);
 	    }
 
 )

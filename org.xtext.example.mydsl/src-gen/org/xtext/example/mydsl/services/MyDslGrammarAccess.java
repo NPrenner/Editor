@@ -817,10 +817,10 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	public class RoleElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Role");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cRoleTypeAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Alternatives cRoleTypeAlternatives_0_0 = (Alternatives)cRoleTypeAssignment_0.eContents().get(0);
-		private final Keyword cRoleTypeInsideRoleKeyword_0_0_0 = (Keyword)cRoleTypeAlternatives_0_0.eContents().get(0);
-		private final Keyword cRoleTypeOutsideRoleKeyword_0_0_1 = (Keyword)cRoleTypeAlternatives_0_0.eContents().get(1);
+		private final Assignment cRolekindAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final Alternatives cRolekindAlternatives_0_0 = (Alternatives)cRolekindAssignment_0.eContents().get(0);
+		private final Keyword cRolekindInsideRoleKeyword_0_0_0 = (Keyword)cRolekindAlternatives_0_0.eContents().get(0);
+		private final Keyword cRolekindOutsideRoleKeyword_0_0_1 = (Keyword)cRolekindAlternatives_0_0.eContents().get(1);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final CrossReference cTypeTypeDefinitionCrossReference_1_0 = (CrossReference)cTypeAssignment_1.eContents().get(0);
 		private final RuleCall cTypeTypeDefinitionIDTerminalRuleCall_1_0_1 = (RuleCall)cTypeTypeDefinitionCrossReference_1_0.eContents().get(1);
@@ -829,23 +829,23 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//Role:
-		//	RoleType=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";";
+		//	rolekind=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";";
 		public ParserRule getRule() { return rule; }
 
-		//RoleType=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";"
+		//rolekind=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";"
 		public Group getGroup() { return cGroup; }
 
-		//RoleType=("insideRole" | "outsideRole")
-		public Assignment getRoleTypeAssignment_0() { return cRoleTypeAssignment_0; }
+		//rolekind=("insideRole" | "outsideRole")
+		public Assignment getRolekindAssignment_0() { return cRolekindAssignment_0; }
 
 		//"insideRole" | "outsideRole"
-		public Alternatives getRoleTypeAlternatives_0_0() { return cRoleTypeAlternatives_0_0; }
+		public Alternatives getRolekindAlternatives_0_0() { return cRolekindAlternatives_0_0; }
 
 		//"insideRole"
-		public Keyword getRoleTypeInsideRoleKeyword_0_0_0() { return cRoleTypeInsideRoleKeyword_0_0_0; }
+		public Keyword getRolekindInsideRoleKeyword_0_0_0() { return cRolekindInsideRoleKeyword_0_0_0; }
 
 		//"outsideRole"
-		public Keyword getRoleTypeOutsideRoleKeyword_0_0_1() { return cRoleTypeOutsideRoleKeyword_0_0_1; }
+		public Keyword getRolekindOutsideRoleKeyword_0_0_1() { return cRolekindOutsideRoleKeyword_0_0_1; }
 
 		//type=[TypeDefinition]
 		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
@@ -2547,7 +2547,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Role:
-	//	RoleType=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";";
+	//	rolekind=("insideRole" | "outsideRole") type=[TypeDefinition] name=ID ";";
 	public RoleElements getRoleAccess() {
 		return pRole;
 	}
