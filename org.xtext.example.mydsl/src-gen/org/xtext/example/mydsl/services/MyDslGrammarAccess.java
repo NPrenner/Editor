@@ -600,8 +600,8 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cNameSTRINGTerminalRuleCall_4_0 = (RuleCall)cNameAssignment_4.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Keyword cMainKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Assignment cMainPlayerAssignment_7 = (Assignment)cGroup.eContents().get(7);
-		private final RuleCall cMainPlayerRoleParserRuleCall_7_0 = (RuleCall)cMainPlayerAssignment_7.eContents().get(0);
+		private final Assignment cMainroleAssignment_7 = (Assignment)cGroup.eContents().get(7);
+		private final RuleCall cMainroleRoleParserRuleCall_7_0 = (RuleCall)cMainroleAssignment_7.eContents().get(0);
 		private final Assignment cObjectsAssignment_8 = (Assignment)cGroup.eContents().get(8);
 		private final RuleCall cObjectsObjectParserRuleCall_8_0 = (RuleCall)cObjectsAssignment_8.eContents().get(0);
 		private final Assignment cProcessAssignment_9 = (Assignment)cGroup.eContents().get(9);
@@ -609,11 +609,11 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		
 		//Interview:
-		//	"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainPlayer=Role objects+=Object*
+		//	"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainrole=Role objects+=Object*
 		//	process+=BusinessProcess* "}";
 		public ParserRule getRule() { return rule; }
 
-		//"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainPlayer=Role objects+=Object*
+		//"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainrole=Role objects+=Object*
 		//process+=BusinessProcess* "}"
 		public Group getGroup() { return cGroup; }
 
@@ -644,11 +644,11 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"main"
 		public Keyword getMainKeyword_6() { return cMainKeyword_6; }
 
-		//mainPlayer=Role
-		public Assignment getMainPlayerAssignment_7() { return cMainPlayerAssignment_7; }
+		//mainrole=Role
+		public Assignment getMainroleAssignment_7() { return cMainroleAssignment_7; }
 
 		//Role
-		public RuleCall getMainPlayerRoleParserRuleCall_7_0() { return cMainPlayerRoleParserRuleCall_7_0; }
+		public RuleCall getMainroleRoleParserRuleCall_7_0() { return cMainroleRoleParserRuleCall_7_0; }
 
 		//objects+=Object*
 		public Assignment getObjectsAssignment_8() { return cObjectsAssignment_8; }
@@ -2005,9 +2005,9 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Alternatives cImportanceAlternatives_0_0 = (Alternatives)cImportanceAssignment_0.eContents().get(0);
 		private final Keyword cImportanceImKeyword_0_0_0 = (Keyword)cImportanceAlternatives_0_0.eContents().get(0);
 		private final Keyword cImportanceUnimKeyword_0_0_1 = (Keyword)cImportanceAlternatives_0_0.eContents().get(1);
-		private final Assignment cPlayerAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final CrossReference cPlayerRoleCrossReference_1_0 = (CrossReference)cPlayerAssignment_1.eContents().get(0);
-		private final RuleCall cPlayerRoleIDTerminalRuleCall_1_0_1 = (RuleCall)cPlayerRoleCrossReference_1_0.eContents().get(1);
+		private final Assignment cRoleAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final CrossReference cRoleRoleCrossReference_1_0 = (CrossReference)cRoleAssignment_1.eContents().get(0);
+		private final RuleCall cRoleRoleIDTerminalRuleCall_1_0_1 = (RuleCall)cRoleRoleCrossReference_1_0.eContents().get(1);
 		private final Assignment cExecutionAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final Alternatives cExecutionAlternatives_2_0 = (Alternatives)cExecutionAssignment_2.eContents().get(0);
 		private final Keyword cExecutionCanKeyword_2_0_0 = (Keyword)cExecutionAlternatives_2_0.eContents().get(0);
@@ -2030,11 +2030,11 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Activity:
-		//	importance=("im" | "unim")? player=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
+		//	importance=("im" | "unim")? role=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
 		//	parameter+=[Object])*)? ")" ";";
 		public ParserRule getRule() { return rule; }
 
-		//importance=("im" | "unim")? player=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
+		//importance=("im" | "unim")? role=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
 		//parameter+=[Object])*)? ")" ";"
 		public Group getGroup() { return cGroup; }
 
@@ -2050,14 +2050,14 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"unim"
 		public Keyword getImportanceUnimKeyword_0_0_1() { return cImportanceUnimKeyword_0_0_1; }
 
-		//player=[Role]
-		public Assignment getPlayerAssignment_1() { return cPlayerAssignment_1; }
+		//role=[Role]
+		public Assignment getRoleAssignment_1() { return cRoleAssignment_1; }
 
 		//[Role]
-		public CrossReference getPlayerRoleCrossReference_1_0() { return cPlayerRoleCrossReference_1_0; }
+		public CrossReference getRoleRoleCrossReference_1_0() { return cRoleRoleCrossReference_1_0; }
 
 		//ID
-		public RuleCall getPlayerRoleIDTerminalRuleCall_1_0_1() { return cPlayerRoleIDTerminalRuleCall_1_0_1; }
+		public RuleCall getRoleRoleIDTerminalRuleCall_1_0_1() { return cRoleRoleIDTerminalRuleCall_1_0_1; }
 
 		//execution=("can" | "must")
 		public Assignment getExecutionAssignment_2() { return cExecutionAssignment_2; }
@@ -2132,9 +2132,9 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Alternatives cImportanceAlternatives_1_0 = (Alternatives)cImportanceAssignment_1.eContents().get(0);
 		private final Keyword cImportanceImKeyword_1_0_0 = (Keyword)cImportanceAlternatives_1_0.eContents().get(0);
 		private final Keyword cImportanceUnimKeyword_1_0_1 = (Keyword)cImportanceAlternatives_1_0.eContents().get(1);
-		private final Assignment cPlayerAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final CrossReference cPlayerRoleCrossReference_2_0 = (CrossReference)cPlayerAssignment_2.eContents().get(0);
-		private final RuleCall cPlayerRoleIDTerminalRuleCall_2_0_1 = (RuleCall)cPlayerRoleCrossReference_2_0.eContents().get(1);
+		private final Assignment cRoleAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final CrossReference cRoleRoleCrossReference_2_0 = (CrossReference)cRoleAssignment_2.eContents().get(0);
+		private final RuleCall cRoleRoleIDTerminalRuleCall_2_0_1 = (RuleCall)cRoleRoleCrossReference_2_0.eContents().get(1);
 		private final Assignment cExecutionAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final Alternatives cExecutionAlternatives_3_0 = (Alternatives)cExecutionAssignment_3.eContents().get(0);
 		private final Keyword cExecutionCanKeyword_3_0_0 = (Keyword)cExecutionAlternatives_3_0.eContents().get(0);
@@ -2161,11 +2161,11 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_11 = (Keyword)cGroup.eContents().get(11);
 		
 		//Systemwork:
-		//	(returnObject=[Object] "=")? importance=("im" | "unim")? player=[Role] execution=("can" | "must") "systemwork"
+		//	(returnObject=[Object] "=")? importance=("im" | "unim")? role=[Role] execution=("can" | "must") "systemwork"
 		//	system=[System] "." function=[Function] "(" (parameter+=[Object] ("," parameter+=[Object])*)? ")" ";";
 		public ParserRule getRule() { return rule; }
 
-		//(returnObject=[Object] "=")? importance=("im" | "unim")? player=[Role] execution=("can" | "must") "systemwork"
+		//(returnObject=[Object] "=")? importance=("im" | "unim")? role=[Role] execution=("can" | "must") "systemwork"
 		//system=[System] "." function=[Function] "(" (parameter+=[Object] ("," parameter+=[Object])*)? ")" ";"
 		public Group getGroup() { return cGroup; }
 
@@ -2196,14 +2196,14 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"unim"
 		public Keyword getImportanceUnimKeyword_1_0_1() { return cImportanceUnimKeyword_1_0_1; }
 
-		//player=[Role]
-		public Assignment getPlayerAssignment_2() { return cPlayerAssignment_2; }
+		//role=[Role]
+		public Assignment getRoleAssignment_2() { return cRoleAssignment_2; }
 
 		//[Role]
-		public CrossReference getPlayerRoleCrossReference_2_0() { return cPlayerRoleCrossReference_2_0; }
+		public CrossReference getRoleRoleCrossReference_2_0() { return cRoleRoleCrossReference_2_0; }
 
 		//ID
-		public RuleCall getPlayerRoleIDTerminalRuleCall_2_0_1() { return cPlayerRoleIDTerminalRuleCall_2_0_1; }
+		public RuleCall getRoleRoleIDTerminalRuleCall_2_0_1() { return cRoleRoleIDTerminalRuleCall_2_0_1; }
 
 		//execution=("can" | "must")
 		public Assignment getExecutionAssignment_3() { return cExecutionAssignment_3; }
@@ -2496,7 +2496,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Interview:
-	//	"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainPlayer=Role objects+=Object*
+	//	"package" package="InterviewPackage" ";" "Interview" name=STRING "{" "main" mainrole=Role objects+=Object*
 	//	process+=BusinessProcess* "}";
 	public InterviewElements getInterviewAccess() {
 		return pInterview;
@@ -2753,7 +2753,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Activity:
-	//	importance=("im" | "unim")? player=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
+	//	importance=("im" | "unim")? role=[Role] execution=("can" | "must") "do" task=[Task] "(" (parameter+=[Object] (","
 	//	parameter+=[Object])*)? ")" ";";
 	public ActivityElements getActivityAccess() {
 		return pActivity;
@@ -2764,7 +2764,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Systemwork:
-	//	(returnObject=[Object] "=")? importance=("im" | "unim")? player=[Role] execution=("can" | "must") "systemwork"
+	//	(returnObject=[Object] "=")? importance=("im" | "unim")? role=[Role] execution=("can" | "must") "systemwork"
 	//	system=[System] "." function=[Function] "(" (parameter+=[Object] ("," parameter+=[Object])*)? ")" ";";
 	public SystemworkElements getSystemworkAccess() {
 		return pSystemwork;

@@ -267,7 +267,7 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 * Constraint:
 	 *     (
 	 *         (importance='im' | importance='unim')? 
-	 *         player=[Role|ID] 
+	 *         role=[Role|ID] 
 	 *         (execution='can' | execution='must') 
 	 *         task=[Task|ID] 
 	 *         (parameter+=[Object|ID] parameter+=[Object|ID]*)?
@@ -438,7 +438,7 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (package='InterviewPackage' name=STRING mainPlayer=Role objects+=Object* process+=BusinessProcess*)
+	 *     (package='InterviewPackage' name=STRING mainrole=Role objects+=Object* process+=BusinessProcess*)
 	 */
 	protected void sequence_Interview(EObject context, Interview semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -557,7 +557,7 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     (
 	 *         returnObject=[Object|ID]? 
 	 *         (importance='im' | importance='unim')? 
-	 *         player=[Role|ID] 
+	 *         role=[Role|ID] 
 	 *         (execution='can' | execution='must') 
 	 *         system=[System|ID] 
 	 *         function=[Function|ID] 

@@ -66,7 +66,7 @@ Interview:
 	
 	
 	'Interview' name=STRING  '{'
-		'main' mainPlayer = Role
+		'main' mainrole = Role
 		objects += Object*
 		
 		process += BusinessProcess*
@@ -211,11 +211,11 @@ PlayerQuery:
  ;
 
 Activity:
-	(importance = ('im' | 'unim'))? player=[Role]   execution = ('can' | 'must') 'do' task= [Task] '(' (parameter += [Object] (',' parameter += [Object])*)? ')' ';'
+	(importance = ('im' | 'unim'))? role=[Role]   execution = ('can' | 'must') 'do' task= [Task] '(' (parameter += [Object] (',' parameter += [Object])*)? ')' ';'
 	 ;
 
 Systemwork:
-	(returnObject = [Object] '=')? (importance = ('im' | 'unim'))? player =[Role] execution =('can' | 'must')  'systemwork'  system = [System] '.' function = [Function] '(' (parameter += [Object] ("," parameter += [Object])*)? ")"  ";"
+	(returnObject = [Object] '=')? (importance = ('im' | 'unim'))? role =[Role] execution =('can' | 'must')  'systemwork'  system = [System] '.' function = [Function] '(' (parameter += [Object] ("," parameter += [Object])*)? ")"  ";"
 ;
 
 terminal ID : ('a'..'z' | 'A'..'Z'| 'ä' | 'ö' | 'ü' | 'ß' | '_')*;

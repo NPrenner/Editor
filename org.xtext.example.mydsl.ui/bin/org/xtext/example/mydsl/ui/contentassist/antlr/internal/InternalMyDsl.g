@@ -4149,9 +4149,9 @@ rule__Interview__Group__7__Impl
     }
 :
 (
-{ before(grammarAccess.getInterviewAccess().getMainPlayerAssignment_7()); }
-(rule__Interview__MainPlayerAssignment_7)
-{ after(grammarAccess.getInterviewAccess().getMainPlayerAssignment_7()); }
+{ before(grammarAccess.getInterviewAccess().getMainroleAssignment_7()); }
+(rule__Interview__MainroleAssignment_7)
+{ after(grammarAccess.getInterviewAccess().getMainroleAssignment_7()); }
 )
 
 ;
@@ -9110,9 +9110,9 @@ rule__Activity__Group__1__Impl
     }
 :
 (
-{ before(grammarAccess.getActivityAccess().getPlayerAssignment_1()); }
-(rule__Activity__PlayerAssignment_1)
-{ after(grammarAccess.getActivityAccess().getPlayerAssignment_1()); }
+{ before(grammarAccess.getActivityAccess().getRoleAssignment_1()); }
+(rule__Activity__RoleAssignment_1)
+{ after(grammarAccess.getActivityAccess().getRoleAssignment_1()); }
 )
 
 ;
@@ -9549,9 +9549,9 @@ rule__Systemwork__Group__2__Impl
     }
 :
 (
-{ before(grammarAccess.getSystemworkAccess().getPlayerAssignment_2()); }
-(rule__Systemwork__PlayerAssignment_2)
-{ after(grammarAccess.getSystemworkAccess().getPlayerAssignment_2()); }
+{ before(grammarAccess.getSystemworkAccess().getRoleAssignment_2()); }
+(rule__Systemwork__RoleAssignment_2)
+{ after(grammarAccess.getSystemworkAccess().getRoleAssignment_2()); }
 )
 
 ;
@@ -10563,14 +10563,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Interview__MainPlayerAssignment_7
+rule__Interview__MainroleAssignment_7
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getInterviewAccess().getMainPlayerRoleParserRuleCall_7_0()); }
-	ruleRole{ after(grammarAccess.getInterviewAccess().getMainPlayerRoleParserRuleCall_7_0()); }
+{ before(grammarAccess.getInterviewAccess().getMainroleRoleParserRuleCall_7_0()); }
+	ruleRole{ after(grammarAccess.getInterviewAccess().getMainroleRoleParserRuleCall_7_0()); }
 )
 
 ;
@@ -11471,18 +11471,18 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Activity__PlayerAssignment_1
+rule__Activity__RoleAssignment_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getActivityAccess().getPlayerRoleCrossReference_1_0()); }
+{ before(grammarAccess.getActivityAccess().getRoleRoleCrossReference_1_0()); }
 (
-{ before(grammarAccess.getActivityAccess().getPlayerRoleIDTerminalRuleCall_1_0_1()); }
-	RULE_ID{ after(grammarAccess.getActivityAccess().getPlayerRoleIDTerminalRuleCall_1_0_1()); }
+{ before(grammarAccess.getActivityAccess().getRoleRoleIDTerminalRuleCall_1_0_1()); }
+	RULE_ID{ after(grammarAccess.getActivityAccess().getRoleRoleIDTerminalRuleCall_1_0_1()); }
 )
-{ after(grammarAccess.getActivityAccess().getPlayerRoleCrossReference_1_0()); }
+{ after(grammarAccess.getActivityAccess().getRoleRoleCrossReference_1_0()); }
 )
 
 ;
@@ -11598,18 +11598,18 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Systemwork__PlayerAssignment_2
+rule__Systemwork__RoleAssignment_2
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getSystemworkAccess().getPlayerRoleCrossReference_2_0()); }
+{ before(grammarAccess.getSystemworkAccess().getRoleRoleCrossReference_2_0()); }
 (
-{ before(grammarAccess.getSystemworkAccess().getPlayerRoleIDTerminalRuleCall_2_0_1()); }
-	RULE_ID{ after(grammarAccess.getSystemworkAccess().getPlayerRoleIDTerminalRuleCall_2_0_1()); }
+{ before(grammarAccess.getSystemworkAccess().getRoleRoleIDTerminalRuleCall_2_0_1()); }
+	RULE_ID{ after(grammarAccess.getSystemworkAccess().getRoleRoleIDTerminalRuleCall_2_0_1()); }
 )
-{ after(grammarAccess.getSystemworkAccess().getPlayerRoleCrossReference_2_0()); }
+{ after(grammarAccess.getSystemworkAccess().getRoleRoleCrossReference_2_0()); }
 )
 
 ;

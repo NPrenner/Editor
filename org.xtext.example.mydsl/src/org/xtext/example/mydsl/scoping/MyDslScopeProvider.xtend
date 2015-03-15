@@ -43,7 +43,7 @@ class MyDslScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclarat
 	 def IScope scope_Commuincation_parameter(Communication communication, EReference ref){
 		val scope = new ArrayList<Object>()
 		val interview = communication.eContainer.eContainer as Interview
-		scope.add(interview.mainPlayer as Object)
+		scope.add(interview.mainrole as Object)
 		scope.addAll(interview.objects)
 		return Scopes::scopeFor(scope)
 	} 
@@ -57,7 +57,7 @@ class MyDslScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclarat
 	
 	def IScope scope_Activity_task(Activity activity, EReference ref) {
 		val scope = new ArrayList<Task>()
-		var role = activity.player.type as Roletype
+		var role = activity.role.type as Roletype
 		scope.addAll(role.tasks)
 		return Scopes::scopeFor(scope)
 	}

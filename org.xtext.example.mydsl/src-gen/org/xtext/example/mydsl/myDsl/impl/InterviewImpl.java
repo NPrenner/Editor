@@ -32,7 +32,7 @@ import org.xtext.example.mydsl.myDsl.Role;
  * <ul>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getPackage <em>Package</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getMainPlayer <em>Main Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getMainrole <em>Mainrole</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getObjects <em>Objects</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.InterviewImpl#getProcess <em>Process</em>}</li>
  * </ul>
@@ -83,14 +83,14 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getMainPlayer() <em>Main Player</em>}' containment reference.
+   * The cached value of the '{@link #getMainrole() <em>Mainrole</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMainPlayer()
+   * @see #getMainrole()
    * @generated
    * @ordered
    */
-  protected Role mainPlayer;
+  protected Role mainrole;
 
   /**
    * The cached value of the '{@link #getObjects() <em>Objects</em>}' containment reference list.
@@ -184,9 +184,9 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
    * <!-- end-user-doc -->
    * @generated
    */
-  public Role getMainPlayer()
+  public Role getMainrole()
   {
-    return mainPlayer;
+    return mainrole;
   }
 
   /**
@@ -194,13 +194,13 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetMainPlayer(Role newMainPlayer, NotificationChain msgs)
+  public NotificationChain basicSetMainrole(Role newMainrole, NotificationChain msgs)
   {
-    Role oldMainPlayer = mainPlayer;
-    mainPlayer = newMainPlayer;
+    Role oldMainrole = mainrole;
+    mainrole = newMainrole;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MyDslPackage.INTERVIEW__MAIN_PLAYER, oldMainPlayer, newMainPlayer);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MyDslPackage.INTERVIEW__MAINROLE, oldMainrole, newMainrole);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -211,20 +211,20 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setMainPlayer(Role newMainPlayer)
+  public void setMainrole(Role newMainrole)
   {
-    if (newMainPlayer != mainPlayer)
+    if (newMainrole != mainrole)
     {
       NotificationChain msgs = null;
-      if (mainPlayer != null)
-        msgs = ((InternalEObject)mainPlayer).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MyDslPackage.INTERVIEW__MAIN_PLAYER, null, msgs);
-      if (newMainPlayer != null)
-        msgs = ((InternalEObject)newMainPlayer).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MyDslPackage.INTERVIEW__MAIN_PLAYER, null, msgs);
-      msgs = basicSetMainPlayer(newMainPlayer, msgs);
+      if (mainrole != null)
+        msgs = ((InternalEObject)mainrole).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MyDslPackage.INTERVIEW__MAINROLE, null, msgs);
+      if (newMainrole != null)
+        msgs = ((InternalEObject)newMainrole).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MyDslPackage.INTERVIEW__MAINROLE, null, msgs);
+      msgs = basicSetMainrole(newMainrole, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.INTERVIEW__MAIN_PLAYER, newMainPlayer, newMainPlayer));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.INTERVIEW__MAINROLE, newMainrole, newMainrole));
   }
 
   /**
@@ -265,8 +265,8 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
   {
     switch (featureID)
     {
-      case MyDslPackage.INTERVIEW__MAIN_PLAYER:
-        return basicSetMainPlayer(null, msgs);
+      case MyDslPackage.INTERVIEW__MAINROLE:
+        return basicSetMainrole(null, msgs);
       case MyDslPackage.INTERVIEW__OBJECTS:
         return ((InternalEList<?>)getObjects()).basicRemove(otherEnd, msgs);
       case MyDslPackage.INTERVIEW__PROCESS:
@@ -289,8 +289,8 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
         return getPackage();
       case MyDslPackage.INTERVIEW__NAME:
         return getName();
-      case MyDslPackage.INTERVIEW__MAIN_PLAYER:
-        return getMainPlayer();
+      case MyDslPackage.INTERVIEW__MAINROLE:
+        return getMainrole();
       case MyDslPackage.INTERVIEW__OBJECTS:
         return getObjects();
       case MyDslPackage.INTERVIEW__PROCESS:
@@ -316,8 +316,8 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
       case MyDslPackage.INTERVIEW__NAME:
         setName((String)newValue);
         return;
-      case MyDslPackage.INTERVIEW__MAIN_PLAYER:
-        setMainPlayer((Role)newValue);
+      case MyDslPackage.INTERVIEW__MAINROLE:
+        setMainrole((Role)newValue);
         return;
       case MyDslPackage.INTERVIEW__OBJECTS:
         getObjects().clear();
@@ -347,8 +347,8 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
       case MyDslPackage.INTERVIEW__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case MyDslPackage.INTERVIEW__MAIN_PLAYER:
-        setMainPlayer((Role)null);
+      case MyDslPackage.INTERVIEW__MAINROLE:
+        setMainrole((Role)null);
         return;
       case MyDslPackage.INTERVIEW__OBJECTS:
         getObjects().clear();
@@ -374,8 +374,8 @@ public class InterviewImpl extends MinimalEObjectImpl.Container implements Inter
         return PACKAGE_EDEFAULT == null ? package_ != null : !PACKAGE_EDEFAULT.equals(package_);
       case MyDslPackage.INTERVIEW__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case MyDslPackage.INTERVIEW__MAIN_PLAYER:
-        return mainPlayer != null;
+      case MyDslPackage.INTERVIEW__MAINROLE:
+        return mainrole != null;
       case MyDslPackage.INTERVIEW__OBJECTS:
         return objects != null && !objects.isEmpty();
       case MyDslPackage.INTERVIEW__PROCESS:

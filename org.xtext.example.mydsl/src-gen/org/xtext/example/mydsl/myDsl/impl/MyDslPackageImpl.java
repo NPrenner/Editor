@@ -699,7 +699,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getInterview_MainPlayer()
+  public EReference getInterview_Mainrole()
   {
     return (EReference)interviewEClass.getEStructuralFeatures().get(2);
   }
@@ -1319,7 +1319,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getActivity_Player()
+  public EReference getActivity_Role()
   {
     return (EReference)activityEClass.getEStructuralFeatures().get(1);
   }
@@ -1389,7 +1389,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getSystemwork_Player()
+  public EReference getSystemwork_Role()
   {
     return (EReference)systemworkEClass.getEStructuralFeatures().get(2);
   }
@@ -1535,7 +1535,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     interviewEClass = createEClass(INTERVIEW);
     createEAttribute(interviewEClass, INTERVIEW__PACKAGE);
     createEAttribute(interviewEClass, INTERVIEW__NAME);
-    createEReference(interviewEClass, INTERVIEW__MAIN_PLAYER);
+    createEReference(interviewEClass, INTERVIEW__MAINROLE);
     createEReference(interviewEClass, INTERVIEW__OBJECTS);
     createEReference(interviewEClass, INTERVIEW__PROCESS);
 
@@ -1622,7 +1622,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
 
     activityEClass = createEClass(ACTIVITY);
     createEAttribute(activityEClass, ACTIVITY__IMPORTANCE);
-    createEReference(activityEClass, ACTIVITY__PLAYER);
+    createEReference(activityEClass, ACTIVITY__ROLE);
     createEAttribute(activityEClass, ACTIVITY__EXECUTION);
     createEReference(activityEClass, ACTIVITY__TASK);
     createEReference(activityEClass, ACTIVITY__PARAMETER);
@@ -1630,7 +1630,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     systemworkEClass = createEClass(SYSTEMWORK);
     createEReference(systemworkEClass, SYSTEMWORK__RETURN_OBJECT);
     createEAttribute(systemworkEClass, SYSTEMWORK__IMPORTANCE);
-    createEReference(systemworkEClass, SYSTEMWORK__PLAYER);
+    createEReference(systemworkEClass, SYSTEMWORK__ROLE);
     createEAttribute(systemworkEClass, SYSTEMWORK__EXECUTION);
     createEReference(systemworkEClass, SYSTEMWORK__SYSTEM);
     createEReference(systemworkEClass, SYSTEMWORK__FUNCTION);
@@ -1743,7 +1743,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     initEClass(interviewEClass, Interview.class, "Interview", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getInterview_Package(), ecorePackage.getEString(), "package", null, 0, 1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getInterview_Name(), ecorePackage.getEString(), "name", null, 0, 1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getInterview_MainPlayer(), this.getRole(), null, "mainPlayer", null, 0, 1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInterview_Mainrole(), this.getRole(), null, "mainrole", null, 0, 1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getInterview_Objects(), this.getObject(), null, "objects", null, 0, -1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getInterview_Process(), this.getBusinessProcess(), null, "process", null, 0, -1, Interview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1830,7 +1830,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
 
     initEClass(activityEClass, Activity.class, "Activity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getActivity_Importance(), ecorePackage.getEString(), "importance", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getActivity_Player(), this.getRole(), null, "player", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getActivity_Role(), this.getRole(), null, "role", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getActivity_Execution(), ecorePackage.getEString(), "execution", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getActivity_Task(), this.getTask(), null, "task", null, 0, 1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getActivity_Parameter(), this.getObject(), null, "parameter", null, 0, -1, Activity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1838,7 +1838,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     initEClass(systemworkEClass, Systemwork.class, "Systemwork", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getSystemwork_ReturnObject(), this.getObject(), null, "returnObject", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getSystemwork_Importance(), ecorePackage.getEString(), "importance", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getSystemwork_Player(), this.getRole(), null, "player", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getSystemwork_Role(), this.getRole(), null, "role", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getSystemwork_Execution(), ecorePackage.getEString(), "execution", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getSystemwork_System(), this.getSystem(), null, "system", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getSystemwork_Function(), this.getFunction(), null, "function", null, 0, 1, Systemwork.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

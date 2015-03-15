@@ -2234,7 +2234,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInterview"
-    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:936:1: ruleInterview returns [EObject current=null] : (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainPlayer_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' ) ;
+    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:936:1: ruleInterview returns [EObject current=null] : (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainrole_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' ) ;
     public final EObject ruleInterview() throws RecognitionException {
         EObject current = null;
 
@@ -2246,7 +2246,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         Token otherlv_5=null;
         Token otherlv_6=null;
         Token otherlv_10=null;
-        EObject lv_mainPlayer_7_0 = null;
+        EObject lv_mainrole_7_0 = null;
 
         EObject lv_objects_8_0 = null;
 
@@ -2256,11 +2256,11 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:939:28: ( (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainPlayer_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:1: (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainPlayer_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:939:28: ( (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainrole_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:1: (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainrole_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:1: (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainPlayer_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:3: otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainPlayer_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}'
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:1: (otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainrole_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}' )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:940:3: otherlv_0= 'package' ( (lv_package_1_0= 'InterviewPackage' ) ) otherlv_2= ';' otherlv_3= 'Interview' ( (lv_name_4_0= RULE_STRING ) ) otherlv_5= '{' otherlv_6= 'main' ( (lv_mainrole_7_0= ruleRole ) ) ( (lv_objects_8_0= ruleObject ) )* ( (lv_process_9_0= ruleBusinessProcess ) )* otherlv_10= '}'
             {
             otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleInterview2101); 
 
@@ -2330,17 +2330,17 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_6, grammarAccess.getInterviewAccess().getMainKeyword_6());
                 
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:993:1: ( (lv_mainPlayer_7_0= ruleRole ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:994:1: (lv_mainPlayer_7_0= ruleRole )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:993:1: ( (lv_mainrole_7_0= ruleRole ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:994:1: (lv_mainrole_7_0= ruleRole )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:994:1: (lv_mainPlayer_7_0= ruleRole )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:995:3: lv_mainPlayer_7_0= ruleRole
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:994:1: (lv_mainrole_7_0= ruleRole )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:995:3: lv_mainrole_7_0= ruleRole
             {
              
-            	        newCompositeNode(grammarAccess.getInterviewAccess().getMainPlayerRoleParserRuleCall_7_0()); 
+            	        newCompositeNode(grammarAccess.getInterviewAccess().getMainroleRoleParserRuleCall_7_0()); 
             	    
             pushFollow(FOLLOW_ruleRole_in_ruleInterview2223);
-            lv_mainPlayer_7_0=ruleRole();
+            lv_mainrole_7_0=ruleRole();
 
             state._fsp--;
 
@@ -2350,8 +2350,8 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             	        }
                    		set(
                    			current, 
-                   			"mainPlayer",
-                    		lv_mainPlayer_7_0, 
+                   			"mainrole",
+                    		lv_mainrole_7_0, 
                     		"Role");
             	        afterParserOrEnumRuleCall();
             	    
@@ -7768,7 +7768,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                     
             otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleActivity7184); 
 
-            		newLeafNode(otherlv_1, grammarAccess.getActivityAccess().getPlayerRoleCrossReference_1_0()); 
+            		newLeafNode(otherlv_1, grammarAccess.getActivityAccess().getRoleRoleCrossReference_1_0()); 
             	
 
             }
@@ -8186,7 +8186,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                     
             otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleSystemwork7567); 
 
-            		newLeafNode(otherlv_3, grammarAccess.getSystemworkAccess().getPlayerRoleCrossReference_2_0()); 
+            		newLeafNode(otherlv_3, grammarAccess.getSystemworkAccess().getRoleRoleCrossReference_2_0()); 
             	
 
             }

@@ -260,13 +260,13 @@ public class MyDslValidator extends AbstractMyDslValidator {
   
   @Check
   public void checkInterviewMainPlayer(final Interview interview) {
-    Role _mainPlayer = interview.getMainPlayer();
-    EClass _eClass = _mainPlayer.eClass();
+    Role _mainrole = interview.getMainrole();
+    EClass _eClass = _mainrole.eClass();
     String _name = _eClass.getName();
     boolean _equals = _name.equals("Role");
     boolean _not = (!_equals);
     if (_not) {
-      this.error("Mainrole must be of type \"Role\"!", MyDslPackage.Literals.INTERVIEW__MAIN_PLAYER, MyDslValidator.INVALID_PARAMETER);
+      this.error("Mainrole must be of type \"Role\"!", MyDslPackage.Literals.INTERVIEW__MAINROLE, MyDslValidator.INVALID_PARAMETER);
     }
   }
   

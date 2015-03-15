@@ -85,8 +85,8 @@ public class MyDslProposalProvider extends AbstractMyDslProposalProvider {
   
   public void completeActivity_Task(final EObject model, final Assignment assignment, final ContentAssistContext context, final ICompletionProposalAcceptor acceptor) {
     final Activity activity = ((Activity) model);
-    Role _player = activity.getPlayer();
-    TypeDefinition _type = _player.getType();
+    Role _role = activity.getRole();
+    TypeDefinition _type = _role.getType();
     Roletype role = ((Roletype) _type);
     for (int n = 0; (n < ((Object[])Conversions.unwrapArray(role.getTasks(), Object.class)).length); n++) {
       {

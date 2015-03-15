@@ -47,8 +47,8 @@ public class MyDslScopeProvider extends AbstractDeclarativeScopeProvider {
     EObject _eContainer = communication.eContainer();
     EObject _eContainer_1 = _eContainer.eContainer();
     final Interview interview = ((Interview) _eContainer_1);
-    Role _mainPlayer = interview.getMainPlayer();
-    scope.add(((org.xtext.example.mydsl.myDsl.Object) _mainPlayer));
+    Role _mainrole = interview.getMainrole();
+    scope.add(((org.xtext.example.mydsl.myDsl.Object) _mainrole));
     EList<org.xtext.example.mydsl.myDsl.Object> _objects = interview.getObjects();
     scope.addAll(_objects);
     return Scopes.scopeFor(scope);
@@ -66,8 +66,8 @@ public class MyDslScopeProvider extends AbstractDeclarativeScopeProvider {
   
   public IScope scope_Activity_task(final Activity activity, final EReference ref) {
     final ArrayList<Task> scope = new ArrayList<Task>();
-    Role _player = activity.getPlayer();
-    TypeDefinition _type = _player.getType();
+    Role _role = activity.getRole();
+    TypeDefinition _type = _role.getType();
     Roletype role = ((Roletype) _type);
     EList<Task> _tasks = role.getTasks();
     scope.addAll(_tasks);

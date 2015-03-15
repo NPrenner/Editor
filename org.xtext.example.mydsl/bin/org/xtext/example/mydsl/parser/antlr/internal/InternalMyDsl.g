@@ -993,16 +993,16 @@ ruleInterview returns [EObject current=null]
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getInterviewAccess().getMainPlayerRoleParserRuleCall_7_0()); 
+	        newCompositeNode(grammarAccess.getInterviewAccess().getMainroleRoleParserRuleCall_7_0()); 
 	    }
-		lv_mainPlayer_7_0=ruleRole		{
+		lv_mainrole_7_0=ruleRole		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getInterviewRule());
 	        }
        		set(
        			$current, 
-       			"mainPlayer",
-        		lv_mainPlayer_7_0, 
+       			"mainrole",
+        		lv_mainrole_7_0, 
         		"Role");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -3109,7 +3109,7 @@ ruleActivity returns [EObject current=null]
         }
 	otherlv_1=RULE_ID
 	{
-		newLeafNode(otherlv_1, grammarAccess.getActivityAccess().getPlayerRoleCrossReference_1_0()); 
+		newLeafNode(otherlv_1, grammarAccess.getActivityAccess().getRoleRoleCrossReference_1_0()); 
 	}
 
 )
@@ -3279,7 +3279,7 @@ ruleSystemwork returns [EObject current=null]
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getSystemworkAccess().getPlayerRoleCrossReference_2_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getSystemworkAccess().getRoleRoleCrossReference_2_0()); 
 	}
 
 )

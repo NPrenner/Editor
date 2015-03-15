@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getPackage <em>Package</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getMainPlayer <em>Main Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getMainrole <em>Mainrole</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getObjects <em>Objects</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Interview#getProcess <em>Process</em>}</li>
  * </ul>
@@ -81,30 +81,30 @@ public interface Interview extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Main Player</b></em>' containment reference.
+   * Returns the value of the '<em><b>Mainrole</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Main Player</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Mainrole</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Main Player</em>' containment reference.
-   * @see #setMainPlayer(Role)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getInterview_MainPlayer()
+   * @return the value of the '<em>Mainrole</em>' containment reference.
+   * @see #setMainrole(Role)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getInterview_Mainrole()
    * @model containment="true"
    * @generated
    */
-  Role getMainPlayer();
+  Role getMainrole();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Interview#getMainPlayer <em>Main Player</em>}' containment reference.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Interview#getMainrole <em>Mainrole</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Main Player</em>' containment reference.
-   * @see #getMainPlayer()
+   * @param value the new value of the '<em>Mainrole</em>' containment reference.
+   * @see #getMainrole()
    * @generated
    */
-  void setMainPlayer(Role value);
+  void setMainrole(Role value);
 
   /**
    * Returns the value of the '<em><b>Objects</b></em>' containment reference list.

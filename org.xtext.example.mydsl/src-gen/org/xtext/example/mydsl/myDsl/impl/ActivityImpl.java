@@ -28,7 +28,7 @@ import org.xtext.example.mydsl.myDsl.Task;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getImportance <em>Importance</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getPlayer <em>Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getRole <em>Role</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getExecution <em>Execution</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getTask <em>Task</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.ActivityImpl#getParameter <em>Parameter</em>}</li>
@@ -60,14 +60,14 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
   protected String importance = IMPORTANCE_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getPlayer() <em>Player</em>}' reference.
+   * The cached value of the '{@link #getRole() <em>Role</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPlayer()
+   * @see #getRole()
    * @generated
    * @ordered
    */
-  protected Role player;
+  protected Role role;
 
   /**
    * The default value of the '{@link #getExecution() <em>Execution</em>}' attribute.
@@ -158,19 +158,19 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
    * <!-- end-user-doc -->
    * @generated
    */
-  public Role getPlayer()
+  public Role getRole()
   {
-    if (player != null && player.eIsProxy())
+    if (role != null && role.eIsProxy())
     {
-      InternalEObject oldPlayer = (InternalEObject)player;
-      player = (Role)eResolveProxy(oldPlayer);
-      if (player != oldPlayer)
+      InternalEObject oldRole = (InternalEObject)role;
+      role = (Role)eResolveProxy(oldRole);
+      if (role != oldRole)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.ACTIVITY__PLAYER, oldPlayer, player));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.ACTIVITY__ROLE, oldRole, role));
       }
     }
-    return player;
+    return role;
   }
 
   /**
@@ -178,9 +178,9 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
    * <!-- end-user-doc -->
    * @generated
    */
-  public Role basicGetPlayer()
+  public Role basicGetRole()
   {
-    return player;
+    return role;
   }
 
   /**
@@ -188,12 +188,12 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setPlayer(Role newPlayer)
+  public void setRole(Role newRole)
   {
-    Role oldPlayer = player;
-    player = newPlayer;
+    Role oldRole = role;
+    role = newRole;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ACTIVITY__PLAYER, oldPlayer, player));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ACTIVITY__ROLE, oldRole, role));
   }
 
   /**
@@ -288,9 +288,9 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
     {
       case MyDslPackage.ACTIVITY__IMPORTANCE:
         return getImportance();
-      case MyDslPackage.ACTIVITY__PLAYER:
-        if (resolve) return getPlayer();
-        return basicGetPlayer();
+      case MyDslPackage.ACTIVITY__ROLE:
+        if (resolve) return getRole();
+        return basicGetRole();
       case MyDslPackage.ACTIVITY__EXECUTION:
         return getExecution();
       case MyDslPackage.ACTIVITY__TASK:
@@ -316,8 +316,8 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
       case MyDslPackage.ACTIVITY__IMPORTANCE:
         setImportance((String)newValue);
         return;
-      case MyDslPackage.ACTIVITY__PLAYER:
-        setPlayer((Role)newValue);
+      case MyDslPackage.ACTIVITY__ROLE:
+        setRole((Role)newValue);
         return;
       case MyDslPackage.ACTIVITY__EXECUTION:
         setExecution((String)newValue);
@@ -346,8 +346,8 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
       case MyDslPackage.ACTIVITY__IMPORTANCE:
         setImportance(IMPORTANCE_EDEFAULT);
         return;
-      case MyDslPackage.ACTIVITY__PLAYER:
-        setPlayer((Role)null);
+      case MyDslPackage.ACTIVITY__ROLE:
+        setRole((Role)null);
         return;
       case MyDslPackage.ACTIVITY__EXECUTION:
         setExecution(EXECUTION_EDEFAULT);
@@ -374,8 +374,8 @@ public class ActivityImpl extends ProcessElementsImpl implements Activity
     {
       case MyDslPackage.ACTIVITY__IMPORTANCE:
         return IMPORTANCE_EDEFAULT == null ? importance != null : !IMPORTANCE_EDEFAULT.equals(importance);
-      case MyDslPackage.ACTIVITY__PLAYER:
-        return player != null;
+      case MyDslPackage.ACTIVITY__ROLE:
+        return role != null;
       case MyDslPackage.ACTIVITY__EXECUTION:
         return EXECUTION_EDEFAULT == null ? execution != null : !EXECUTION_EDEFAULT.equals(execution);
       case MyDslPackage.ACTIVITY__TASK:

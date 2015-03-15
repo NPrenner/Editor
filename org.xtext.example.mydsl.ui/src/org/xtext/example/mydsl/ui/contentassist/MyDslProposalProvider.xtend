@@ -43,7 +43,7 @@ class MyDslProposalProvider extends AbstractMyDslProposalProvider {
 	override completeActivity_Task(EObject model, Assignment assignment, ContentAssistContext context,
 		ICompletionProposalAcceptor acceptor) {
 		val activity = model as Activity
-		var role = activity.player.type as Roletype
+		var role = activity.role.type as Roletype
 		for(var n = 0; n < role.tasks.length; n++){
 			var paramString = ''
 			if(role.tasks.get(n).parameter.length != 0){

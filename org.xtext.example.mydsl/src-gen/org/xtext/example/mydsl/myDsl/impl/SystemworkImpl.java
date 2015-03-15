@@ -29,7 +29,7 @@ import org.xtext.example.mydsl.myDsl.Systemwork;
  * <ul>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getReturnObject <em>Return Object</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getImportance <em>Importance</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getPlayer <em>Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getRole <em>Role</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getExecution <em>Execution</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getSystem <em>System</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.impl.SystemworkImpl#getFunction <em>Function</em>}</li>
@@ -72,14 +72,14 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
   protected String importance = IMPORTANCE_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getPlayer() <em>Player</em>}' reference.
+   * The cached value of the '{@link #getRole() <em>Role</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getPlayer()
+   * @see #getRole()
    * @generated
    * @ordered
    */
-  protected Role player;
+  protected Role role;
 
   /**
    * The default value of the '{@link #getExecution() <em>Execution</em>}' attribute.
@@ -223,19 +223,19 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
    * <!-- end-user-doc -->
    * @generated
    */
-  public Role getPlayer()
+  public Role getRole()
   {
-    if (player != null && player.eIsProxy())
+    if (role != null && role.eIsProxy())
     {
-      InternalEObject oldPlayer = (InternalEObject)player;
-      player = (Role)eResolveProxy(oldPlayer);
-      if (player != oldPlayer)
+      InternalEObject oldRole = (InternalEObject)role;
+      role = (Role)eResolveProxy(oldRole);
+      if (role != oldRole)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.SYSTEMWORK__PLAYER, oldPlayer, player));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.SYSTEMWORK__ROLE, oldRole, role));
       }
     }
-    return player;
+    return role;
   }
 
   /**
@@ -243,9 +243,9 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
    * <!-- end-user-doc -->
    * @generated
    */
-  public Role basicGetPlayer()
+  public Role basicGetRole()
   {
-    return player;
+    return role;
   }
 
   /**
@@ -253,12 +253,12 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setPlayer(Role newPlayer)
+  public void setRole(Role newRole)
   {
-    Role oldPlayer = player;
-    player = newPlayer;
+    Role oldRole = role;
+    role = newRole;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.SYSTEMWORK__PLAYER, oldPlayer, player));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.SYSTEMWORK__ROLE, oldRole, role));
   }
 
   /**
@@ -399,9 +399,9 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
         return basicGetReturnObject();
       case MyDslPackage.SYSTEMWORK__IMPORTANCE:
         return getImportance();
-      case MyDslPackage.SYSTEMWORK__PLAYER:
-        if (resolve) return getPlayer();
-        return basicGetPlayer();
+      case MyDslPackage.SYSTEMWORK__ROLE:
+        if (resolve) return getRole();
+        return basicGetRole();
       case MyDslPackage.SYSTEMWORK__EXECUTION:
         return getExecution();
       case MyDslPackage.SYSTEMWORK__SYSTEM:
@@ -433,8 +433,8 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
       case MyDslPackage.SYSTEMWORK__IMPORTANCE:
         setImportance((String)newValue);
         return;
-      case MyDslPackage.SYSTEMWORK__PLAYER:
-        setPlayer((Role)newValue);
+      case MyDslPackage.SYSTEMWORK__ROLE:
+        setRole((Role)newValue);
         return;
       case MyDslPackage.SYSTEMWORK__EXECUTION:
         setExecution((String)newValue);
@@ -469,8 +469,8 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
       case MyDslPackage.SYSTEMWORK__IMPORTANCE:
         setImportance(IMPORTANCE_EDEFAULT);
         return;
-      case MyDslPackage.SYSTEMWORK__PLAYER:
-        setPlayer((Role)null);
+      case MyDslPackage.SYSTEMWORK__ROLE:
+        setRole((Role)null);
         return;
       case MyDslPackage.SYSTEMWORK__EXECUTION:
         setExecution(EXECUTION_EDEFAULT);
@@ -502,8 +502,8 @@ public class SystemworkImpl extends ProcessElementsImpl implements Systemwork
         return returnObject != null;
       case MyDslPackage.SYSTEMWORK__IMPORTANCE:
         return IMPORTANCE_EDEFAULT == null ? importance != null : !IMPORTANCE_EDEFAULT.equals(importance);
-      case MyDslPackage.SYSTEMWORK__PLAYER:
-        return player != null;
+      case MyDslPackage.SYSTEMWORK__ROLE:
+        return role != null;
       case MyDslPackage.SYSTEMWORK__EXECUTION:
         return EXECUTION_EDEFAULT == null ? execution != null : !EXECUTION_EDEFAULT.equals(execution);
       case MyDslPackage.SYSTEMWORK__SYSTEM:

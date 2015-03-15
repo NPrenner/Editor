@@ -140,7 +140,7 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getFunctionAccess().getReturnBoolAssignment_5_2(), "rule__Function__ReturnBoolAssignment_5_2");
 					put(grammarAccess.getInterviewAccess().getPackageAssignment_1(), "rule__Interview__PackageAssignment_1");
 					put(grammarAccess.getInterviewAccess().getNameAssignment_4(), "rule__Interview__NameAssignment_4");
-					put(grammarAccess.getInterviewAccess().getMainPlayerAssignment_7(), "rule__Interview__MainPlayerAssignment_7");
+					put(grammarAccess.getInterviewAccess().getMainroleAssignment_7(), "rule__Interview__MainroleAssignment_7");
 					put(grammarAccess.getInterviewAccess().getObjectsAssignment_8(), "rule__Interview__ObjectsAssignment_8");
 					put(grammarAccess.getInterviewAccess().getProcessAssignment_9(), "rule__Interview__ProcessAssignment_9");
 					put(grammarAccess.getBooleanAccess().getTypeAssignment_1(), "rule__Boolean__TypeAssignment_1");
@@ -195,14 +195,14 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getCommunicationAccess().getParameterAssignment_9_1_1(), "rule__Communication__ParameterAssignment_9_1_1");
 					put(grammarAccess.getCommunicationAccess().getChannelAssignment_11_1(), "rule__Communication__ChannelAssignment_11_1");
 					put(grammarAccess.getActivityAccess().getImportanceAssignment_0(), "rule__Activity__ImportanceAssignment_0");
-					put(grammarAccess.getActivityAccess().getPlayerAssignment_1(), "rule__Activity__PlayerAssignment_1");
+					put(grammarAccess.getActivityAccess().getRoleAssignment_1(), "rule__Activity__RoleAssignment_1");
 					put(grammarAccess.getActivityAccess().getExecutionAssignment_2(), "rule__Activity__ExecutionAssignment_2");
 					put(grammarAccess.getActivityAccess().getTaskAssignment_4(), "rule__Activity__TaskAssignment_4");
 					put(grammarAccess.getActivityAccess().getParameterAssignment_6_0(), "rule__Activity__ParameterAssignment_6_0");
 					put(grammarAccess.getActivityAccess().getParameterAssignment_6_1_1(), "rule__Activity__ParameterAssignment_6_1_1");
 					put(grammarAccess.getSystemworkAccess().getReturnObjectAssignment_0_0(), "rule__Systemwork__ReturnObjectAssignment_0_0");
 					put(grammarAccess.getSystemworkAccess().getImportanceAssignment_1(), "rule__Systemwork__ImportanceAssignment_1");
-					put(grammarAccess.getSystemworkAccess().getPlayerAssignment_2(), "rule__Systemwork__PlayerAssignment_2");
+					put(grammarAccess.getSystemworkAccess().getRoleAssignment_2(), "rule__Systemwork__RoleAssignment_2");
 					put(grammarAccess.getSystemworkAccess().getExecutionAssignment_3(), "rule__Systemwork__ExecutionAssignment_3");
 					put(grammarAccess.getSystemworkAccess().getSystemAssignment_5(), "rule__Systemwork__SystemAssignment_5");
 					put(grammarAccess.getSystemworkAccess().getFunctionAssignment_7(), "rule__Systemwork__FunctionAssignment_7");

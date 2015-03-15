@@ -528,13 +528,13 @@ public interface MyDslPackage extends EPackage
   int INTERVIEW__NAME = 1;
 
   /**
-   * The feature id for the '<em><b>Main Player</b></em>' containment reference.
+   * The feature id for the '<em><b>Mainrole</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int INTERVIEW__MAIN_PLAYER = 2;
+  int INTERVIEW__MAINROLE = 2;
 
   /**
    * The feature id for the '<em><b>Objects</b></em>' containment reference list.
@@ -1389,13 +1389,13 @@ public interface MyDslPackage extends EPackage
   int ACTIVITY__IMPORTANCE = PROCESS_ELEMENTS_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Player</b></em>' reference.
+   * The feature id for the '<em><b>Role</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ACTIVITY__PLAYER = PROCESS_ELEMENTS_FEATURE_COUNT + 1;
+  int ACTIVITY__ROLE = PROCESS_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Execution</b></em>' attribute.
@@ -1462,13 +1462,13 @@ public interface MyDslPackage extends EPackage
   int SYSTEMWORK__IMPORTANCE = PROCESS_ELEMENTS_FEATURE_COUNT + 1;
 
   /**
-   * The feature id for the '<em><b>Player</b></em>' reference.
+   * The feature id for the '<em><b>Role</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SYSTEMWORK__PLAYER = PROCESS_ELEMENTS_FEATURE_COUNT + 2;
+  int SYSTEMWORK__ROLE = PROCESS_ELEMENTS_FEATURE_COUNT + 2;
 
   /**
    * The feature id for the '<em><b>Execution</b></em>' attribute.
@@ -1884,15 +1884,15 @@ public interface MyDslPackage extends EPackage
   EAttribute getInterview_Name();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.mydsl.myDsl.Interview#getMainPlayer <em>Main Player</em>}'.
+   * Returns the meta object for the containment reference '{@link org.xtext.example.mydsl.myDsl.Interview#getMainrole <em>Mainrole</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Main Player</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Interview#getMainPlayer()
+   * @return the meta object for the containment reference '<em>Mainrole</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Interview#getMainrole()
    * @see #getInterview()
    * @generated
    */
-  EReference getInterview_MainPlayer();
+  EReference getInterview_Mainrole();
 
   /**
    * Returns the meta object for the containment reference list '{@link org.xtext.example.mydsl.myDsl.Interview#getObjects <em>Objects</em>}'.
@@ -2541,15 +2541,15 @@ public interface MyDslPackage extends EPackage
   EAttribute getActivity_Importance();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.Activity#getPlayer <em>Player</em>}'.
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.Activity#getRole <em>Role</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Player</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Activity#getPlayer()
+   * @return the meta object for the reference '<em>Role</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Activity#getRole()
    * @see #getActivity()
    * @generated
    */
-  EReference getActivity_Player();
+  EReference getActivity_Role();
 
   /**
    * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Activity#getExecution <em>Execution</em>}'.
@@ -2617,15 +2617,15 @@ public interface MyDslPackage extends EPackage
   EAttribute getSystemwork_Importance();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.Systemwork#getPlayer <em>Player</em>}'.
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.Systemwork#getRole <em>Role</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Player</em>'.
-   * @see org.xtext.example.mydsl.myDsl.Systemwork#getPlayer()
+   * @return the meta object for the reference '<em>Role</em>'.
+   * @see org.xtext.example.mydsl.myDsl.Systemwork#getRole()
    * @see #getSystemwork()
    * @generated
    */
-  EReference getSystemwork_Player();
+  EReference getSystemwork_Role();
 
   /**
    * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.Systemwork#getExecution <em>Execution</em>}'.
@@ -2997,12 +2997,12 @@ public interface MyDslPackage extends EPackage
     EAttribute INTERVIEW__NAME = eINSTANCE.getInterview_Name();
 
     /**
-     * The meta object literal for the '<em><b>Main Player</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Mainrole</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference INTERVIEW__MAIN_PLAYER = eINSTANCE.getInterview_MainPlayer();
+    EReference INTERVIEW__MAINROLE = eINSTANCE.getInterview_Mainrole();
 
     /**
      * The meta object literal for the '<em><b>Objects</b></em>' containment reference list feature.
@@ -3543,12 +3543,12 @@ public interface MyDslPackage extends EPackage
     EAttribute ACTIVITY__IMPORTANCE = eINSTANCE.getActivity_Importance();
 
     /**
-     * The meta object literal for the '<em><b>Player</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Role</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference ACTIVITY__PLAYER = eINSTANCE.getActivity_Player();
+    EReference ACTIVITY__ROLE = eINSTANCE.getActivity_Role();
 
     /**
      * The meta object literal for the '<em><b>Execution</b></em>' attribute feature.
@@ -3601,12 +3601,12 @@ public interface MyDslPackage extends EPackage
     EAttribute SYSTEMWORK__IMPORTANCE = eINSTANCE.getSystemwork_Importance();
 
     /**
-     * The meta object literal for the '<em><b>Player</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Role</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference SYSTEMWORK__PLAYER = eINSTANCE.getSystemwork_Player();
+    EReference SYSTEMWORK__ROLE = eINSTANCE.getSystemwork_Role();
 
     /**
      * The meta object literal for the '<em><b>Execution</b></em>' attribute feature.

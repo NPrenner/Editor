@@ -154,8 +154,8 @@ class MyDslValidator extends AbstractMyDslValidator {
 	
 	@Check
 	def checkInterviewMainPlayer(Interview interview){
-		if(!interview.mainPlayer.eClass.name.equals('Role'))
-			error('Mainrole must be of type "Role"!', MyDslPackage.Literals.INTERVIEW__MAIN_PLAYER,INVALID_PARAMETER) 
+		if(!interview.mainrole.eClass.name.equals('Role'))
+			error('Mainrole must be of type "Role"!', MyDslPackage.Literals.INTERVIEW__MAINROLE,INVALID_PARAMETER) 
 	}
 	
 	

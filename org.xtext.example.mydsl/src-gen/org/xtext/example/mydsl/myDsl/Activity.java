@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getImportance <em>Importance</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getPlayer <em>Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getRole <em>Role</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getExecution <em>Execution</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getTask <em>Task</em>}</li>
  *   <li>{@link org.xtext.example.mydsl.myDsl.Activity#getParameter <em>Parameter</em>}</li>
@@ -53,30 +53,30 @@ public interface Activity extends ProcessElements, ProcessChartElements
   void setImportance(String value);
 
   /**
-   * Returns the value of the '<em><b>Player</b></em>' reference.
+   * Returns the value of the '<em><b>Role</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Player</em>' reference isn't clear,
+   * If the meaning of the '<em>Role</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Player</em>' reference.
-   * @see #setPlayer(Role)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getActivity_Player()
+   * @return the value of the '<em>Role</em>' reference.
+   * @see #setRole(Role)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getActivity_Role()
    * @model
    * @generated
    */
-  Role getPlayer();
+  Role getRole();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Activity#getPlayer <em>Player</em>}' reference.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.Activity#getRole <em>Role</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Player</em>' reference.
-   * @see #getPlayer()
+   * @param value the new value of the '<em>Role</em>' reference.
+   * @see #getRole()
    * @generated
    */
-  void setPlayer(Role value);
+  void setRole(Role value);
 
   /**
    * Returns the value of the '<em><b>Execution</b></em>' attribute.
