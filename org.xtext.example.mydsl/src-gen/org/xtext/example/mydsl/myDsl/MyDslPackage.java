@@ -1242,14 +1242,14 @@ public interface MyDslPackage extends EPackage
   int BRACE_QUERY_FEATURE_COUNT = QUERY_TYPES_FEATURE_COUNT + 1;
 
   /**
-   * The meta object id for the '{@link org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl <em>Player Query</em>}' class.
+   * The meta object id for the '{@link org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl <em>Role Query</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl
-   * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getPlayerQuery()
+   * @see org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl
+   * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getRoleQuery()
    * @generated
    */
-  int PLAYER_QUERY = 33;
+  int ROLE_QUERY = 33;
 
   /**
    * The feature id for the '<em><b>Player</b></em>' reference.
@@ -1258,16 +1258,16 @@ public interface MyDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PLAYER_QUERY__PLAYER = QUERY_FEATURE_COUNT + 0;
+  int ROLE_QUERY__PLAYER = QUERY_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Status</b></em>' reference.
+   * The feature id for the '<em><b>State</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAYER_QUERY__STATUS = QUERY_FEATURE_COUNT + 1;
+  int ROLE_QUERY__STATE = QUERY_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Boolean</b></em>' attribute.
@@ -1276,16 +1276,16 @@ public interface MyDslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PLAYER_QUERY__BOOLEAN = QUERY_FEATURE_COUNT + 2;
+  int ROLE_QUERY__BOOLEAN = QUERY_FEATURE_COUNT + 2;
 
   /**
-   * The number of structural features of the '<em>Player Query</em>' class.
+   * The number of structural features of the '<em>Role Query</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PLAYER_QUERY_FEATURE_COUNT = QUERY_FEATURE_COUNT + 3;
+  int ROLE_QUERY_FEATURE_COUNT = QUERY_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link org.xtext.example.mydsl.myDsl.impl.CommunicationImpl <em>Communication</em>}' class.
@@ -2390,47 +2390,47 @@ public interface MyDslPackage extends EPackage
   EReference getBraceQuery_Queries();
 
   /**
-   * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.PlayerQuery <em>Player Query</em>}'.
+   * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.RoleQuery <em>Role Query</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Player Query</em>'.
-   * @see org.xtext.example.mydsl.myDsl.PlayerQuery
+   * @return the meta object for class '<em>Role Query</em>'.
+   * @see org.xtext.example.mydsl.myDsl.RoleQuery
    * @generated
    */
-  EClass getPlayerQuery();
+  EClass getRoleQuery();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getPlayer <em>Player</em>}'.
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getPlayer <em>Player</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Player</em>'.
-   * @see org.xtext.example.mydsl.myDsl.PlayerQuery#getPlayer()
-   * @see #getPlayerQuery()
+   * @see org.xtext.example.mydsl.myDsl.RoleQuery#getPlayer()
+   * @see #getRoleQuery()
    * @generated
    */
-  EReference getPlayerQuery_Player();
+  EReference getRoleQuery_Player();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getStatus <em>Status</em>}'.
+   * Returns the meta object for the reference '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getState <em>State</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Status</em>'.
-   * @see org.xtext.example.mydsl.myDsl.PlayerQuery#getStatus()
-   * @see #getPlayerQuery()
+   * @return the meta object for the reference '<em>State</em>'.
+   * @see org.xtext.example.mydsl.myDsl.RoleQuery#getState()
+   * @see #getRoleQuery()
    * @generated
    */
-  EReference getPlayerQuery_Status();
+  EReference getRoleQuery_State();
 
   /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getBoolean <em>Boolean</em>}'.
+   * Returns the meta object for the attribute '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getBoolean <em>Boolean</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Boolean</em>'.
-   * @see org.xtext.example.mydsl.myDsl.PlayerQuery#getBoolean()
-   * @see #getPlayerQuery()
+   * @see org.xtext.example.mydsl.myDsl.RoleQuery#getBoolean()
+   * @see #getRoleQuery()
    * @generated
    */
-  EAttribute getPlayerQuery_Boolean();
+  EAttribute getRoleQuery_Boolean();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.mydsl.myDsl.Communication <em>Communication</em>}'.
@@ -3425,14 +3425,14 @@ public interface MyDslPackage extends EPackage
     EReference BRACE_QUERY__QUERIES = eINSTANCE.getBraceQuery_Queries();
 
     /**
-     * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl <em>Player Query</em>}' class.
+     * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl <em>Role Query</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl
-     * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getPlayerQuery()
+     * @see org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl
+     * @see org.xtext.example.mydsl.myDsl.impl.MyDslPackageImpl#getRoleQuery()
      * @generated
      */
-    EClass PLAYER_QUERY = eINSTANCE.getPlayerQuery();
+    EClass ROLE_QUERY = eINSTANCE.getRoleQuery();
 
     /**
      * The meta object literal for the '<em><b>Player</b></em>' reference feature.
@@ -3440,15 +3440,15 @@ public interface MyDslPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PLAYER_QUERY__PLAYER = eINSTANCE.getPlayerQuery_Player();
+    EReference ROLE_QUERY__PLAYER = eINSTANCE.getRoleQuery_Player();
 
     /**
-     * The meta object literal for the '<em><b>Status</b></em>' reference feature.
+     * The meta object literal for the '<em><b>State</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PLAYER_QUERY__STATUS = eINSTANCE.getPlayerQuery_Status();
+    EReference ROLE_QUERY__STATE = eINSTANCE.getRoleQuery_State();
 
     /**
      * The meta object literal for the '<em><b>Boolean</b></em>' attribute feature.
@@ -3456,7 +3456,7 @@ public interface MyDslPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PLAYER_QUERY__BOOLEAN = eINSTANCE.getPlayerQuery_Boolean();
+    EAttribute ROLE_QUERY__BOOLEAN = eINSTANCE.getRoleQuery_Boolean();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.mydsl.myDsl.impl.CommunicationImpl <em>Communication</em>}' class.

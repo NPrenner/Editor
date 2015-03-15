@@ -320,13 +320,13 @@ public interface MyDslFactory extends EFactory
   BraceQuery createBraceQuery();
 
   /**
-   * Returns a new object of class '<em>Player Query</em>'.
+   * Returns a new object of class '<em>Role Query</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Player Query</em>'.
+   * @return a new object of class '<em>Role Query</em>'.
    * @generated
    */
-  PlayerQuery createPlayerQuery();
+  RoleQuery createRoleQuery();
 
   /**
    * Returns a new object of class '<em>Communication</em>'.

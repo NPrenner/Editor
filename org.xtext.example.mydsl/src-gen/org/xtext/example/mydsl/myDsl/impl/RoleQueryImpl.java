@@ -10,26 +10,26 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.State;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Player Query</b></em>'.
+ * An implementation of the model object '<em><b>Role Query</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl#getPlayer <em>Player</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl#getStatus <em>Status</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.impl.PlayerQueryImpl#getBoolean <em>Boolean</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl#getPlayer <em>Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl#getState <em>State</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.impl.RoleQueryImpl#getBoolean <em>Boolean</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
+public class RoleQueryImpl extends QueryImpl implements RoleQuery
 {
   /**
    * The cached value of the '{@link #getPlayer() <em>Player</em>}' reference.
@@ -42,14 +42,14 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   protected Role player;
 
   /**
-   * The cached value of the '{@link #getStatus() <em>Status</em>}' reference.
+   * The cached value of the '{@link #getState() <em>State</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getStatus()
+   * @see #getState()
    * @generated
    * @ordered
    */
-  protected State status;
+  protected State state;
 
   /**
    * The default value of the '{@link #getBoolean() <em>Boolean</em>}' attribute.
@@ -76,7 +76,7 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
    * <!-- end-user-doc -->
    * @generated
    */
-  protected PlayerQueryImpl()
+  protected RoleQueryImpl()
   {
     super();
   }
@@ -89,7 +89,7 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   @Override
   protected EClass eStaticClass()
   {
-    return MyDslPackage.Literals.PLAYER_QUERY;
+    return MyDslPackage.Literals.ROLE_QUERY;
   }
 
   /**
@@ -106,7 +106,7 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
       if (player != oldPlayer)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.PLAYER_QUERY__PLAYER, oldPlayer, player));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.ROLE_QUERY__PLAYER, oldPlayer, player));
       }
     }
     return player;
@@ -132,7 +132,7 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
     Role oldPlayer = player;
     player = newPlayer;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.PLAYER_QUERY__PLAYER, oldPlayer, player));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ROLE_QUERY__PLAYER, oldPlayer, player));
   }
 
   /**
@@ -140,19 +140,19 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
    * <!-- end-user-doc -->
    * @generated
    */
-  public State getStatus()
+  public State getState()
   {
-    if (status != null && status.eIsProxy())
+    if (state != null && state.eIsProxy())
     {
-      InternalEObject oldStatus = (InternalEObject)status;
-      status = (State)eResolveProxy(oldStatus);
-      if (status != oldStatus)
+      InternalEObject oldState = (InternalEObject)state;
+      state = (State)eResolveProxy(oldState);
+      if (state != oldState)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.PLAYER_QUERY__STATUS, oldStatus, status));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, MyDslPackage.ROLE_QUERY__STATE, oldState, state));
       }
     }
-    return status;
+    return state;
   }
 
   /**
@@ -160,9 +160,9 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
    * <!-- end-user-doc -->
    * @generated
    */
-  public State basicGetStatus()
+  public State basicGetState()
   {
-    return status;
+    return state;
   }
 
   /**
@@ -170,12 +170,12 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setStatus(State newStatus)
+  public void setState(State newState)
   {
-    State oldStatus = status;
-    status = newStatus;
+    State oldState = state;
+    state = newState;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.PLAYER_QUERY__STATUS, oldStatus, status));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ROLE_QUERY__STATE, oldState, state));
   }
 
   /**
@@ -198,7 +198,7 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
     String oldBoolean = boolean_;
     boolean_ = newBoolean;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.PLAYER_QUERY__BOOLEAN, oldBoolean, boolean_));
+      eNotify(new ENotificationImpl(this, Notification.SET, MyDslPackage.ROLE_QUERY__BOOLEAN, oldBoolean, boolean_));
   }
 
   /**
@@ -211,13 +211,13 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   {
     switch (featureID)
     {
-      case MyDslPackage.PLAYER_QUERY__PLAYER:
+      case MyDslPackage.ROLE_QUERY__PLAYER:
         if (resolve) return getPlayer();
         return basicGetPlayer();
-      case MyDslPackage.PLAYER_QUERY__STATUS:
-        if (resolve) return getStatus();
-        return basicGetStatus();
-      case MyDslPackage.PLAYER_QUERY__BOOLEAN:
+      case MyDslPackage.ROLE_QUERY__STATE:
+        if (resolve) return getState();
+        return basicGetState();
+      case MyDslPackage.ROLE_QUERY__BOOLEAN:
         return getBoolean();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -233,13 +233,13 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   {
     switch (featureID)
     {
-      case MyDslPackage.PLAYER_QUERY__PLAYER:
+      case MyDslPackage.ROLE_QUERY__PLAYER:
         setPlayer((Role)newValue);
         return;
-      case MyDslPackage.PLAYER_QUERY__STATUS:
-        setStatus((State)newValue);
+      case MyDslPackage.ROLE_QUERY__STATE:
+        setState((State)newValue);
         return;
-      case MyDslPackage.PLAYER_QUERY__BOOLEAN:
+      case MyDslPackage.ROLE_QUERY__BOOLEAN:
         setBoolean((String)newValue);
         return;
     }
@@ -256,13 +256,13 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   {
     switch (featureID)
     {
-      case MyDslPackage.PLAYER_QUERY__PLAYER:
+      case MyDslPackage.ROLE_QUERY__PLAYER:
         setPlayer((Role)null);
         return;
-      case MyDslPackage.PLAYER_QUERY__STATUS:
-        setStatus((State)null);
+      case MyDslPackage.ROLE_QUERY__STATE:
+        setState((State)null);
         return;
-      case MyDslPackage.PLAYER_QUERY__BOOLEAN:
+      case MyDslPackage.ROLE_QUERY__BOOLEAN:
         setBoolean(BOOLEAN_EDEFAULT);
         return;
     }
@@ -279,11 +279,11 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
   {
     switch (featureID)
     {
-      case MyDslPackage.PLAYER_QUERY__PLAYER:
+      case MyDslPackage.ROLE_QUERY__PLAYER:
         return player != null;
-      case MyDslPackage.PLAYER_QUERY__STATUS:
-        return status != null;
-      case MyDslPackage.PLAYER_QUERY__BOOLEAN:
+      case MyDslPackage.ROLE_QUERY__STATE:
+        return state != null;
+      case MyDslPackage.ROLE_QUERY__BOOLEAN:
         return BOOLEAN_EDEFAULT == null ? boolean_ != null : !BOOLEAN_EDEFAULT.equals(boolean_);
     }
     return super.eIsSet(featureID);
@@ -306,4 +306,4 @@ public class PlayerQueryImpl extends QueryImpl implements PlayerQuery
     return result.toString();
   }
 
-} //PlayerQueryImpl
+} //RoleQueryImpl

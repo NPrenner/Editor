@@ -2510,11 +2510,11 @@ ruleQuery returns [EObject current=null]
 
     |
     { 
-        newCompositeNode(grammarAccess.getQueryAccess().getPlayerQueryParserRuleCall_1()); 
+        newCompositeNode(grammarAccess.getQueryAccess().getRoleQueryParserRuleCall_1()); 
     }
-    this_PlayerQuery_1=rulePlayerQuery
+    this_RoleQuery_1=ruleRoleQuery
     { 
-        $current = $this_PlayerQuery_1.current; 
+        $current = $this_RoleQuery_1.current; 
         afterParserOrEnumRuleCall();
     }
 
@@ -2776,81 +2776,81 @@ ruleBraceQuery returns [EObject current=null]
 
 
 
-// Entry rule entryRulePlayerQuery
-entryRulePlayerQuery returns [EObject current=null] 
+// Entry rule entryRuleRoleQuery
+entryRuleRoleQuery returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getPlayerQueryRule()); }
-	 iv_rulePlayerQuery=rulePlayerQuery 
-	 { $current=$iv_rulePlayerQuery.current; } 
+	{ newCompositeNode(grammarAccess.getRoleQueryRule()); }
+	 iv_ruleRoleQuery=ruleRoleQuery 
+	 { $current=$iv_ruleRoleQuery.current; } 
 	 EOF 
 ;
 
-// Rule PlayerQuery
-rulePlayerQuery returns [EObject current=null] 
+// Rule RoleQuery
+ruleRoleQuery returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 ((	otherlv_0='!' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getPlayerQueryAccess().getExclamationMarkKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getRoleQueryAccess().getExclamationMarkKeyword_0());
     }
 )?(
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPlayerQueryRule());
+	            $current = createModelElement(grammarAccess.getRoleQueryRule());
 	        }
         }
 	otherlv_1=RULE_ID
 	{
-		newLeafNode(otherlv_1, grammarAccess.getPlayerQueryAccess().getPlayerRoleCrossReference_1_0()); 
+		newLeafNode(otherlv_1, grammarAccess.getRoleQueryAccess().getPlayerRoleCrossReference_1_0()); 
 	}
 
 )
 )	otherlv_2='.' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getPlayerQueryAccess().getFullStopKeyword_2());
+    	newLeafNode(otherlv_2, grammarAccess.getRoleQueryAccess().getFullStopKeyword_2());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPlayerQueryRule());
+	            $current = createModelElement(grammarAccess.getRoleQueryRule());
 	        }
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getPlayerQueryAccess().getStatusStateCrossReference_3_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getRoleQueryAccess().getStateStateCrossReference_3_0()); 
 	}
 
 )
 )(	otherlv_4='is' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getPlayerQueryAccess().getIsKeyword_4_0());
+    	newLeafNode(otherlv_4, grammarAccess.getRoleQueryAccess().getIsKeyword_4_0());
     }
 (
 (
 (
 		lv_boolean_5_1=	'true' 
     {
-        newLeafNode(lv_boolean_5_1, grammarAccess.getPlayerQueryAccess().getBooleanTrueKeyword_4_1_0_0());
+        newLeafNode(lv_boolean_5_1, grammarAccess.getRoleQueryAccess().getBooleanTrueKeyword_4_1_0_0());
     }
  
 	    {
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPlayerQueryRule());
+	            $current = createModelElement(grammarAccess.getRoleQueryRule());
 	        }
        		setWithLastConsumed($current, "boolean", lv_boolean_5_1, null);
 	    }
 
     |		lv_boolean_5_2=	'false' 
     {
-        newLeafNode(lv_boolean_5_2, grammarAccess.getPlayerQueryAccess().getBooleanFalseKeyword_4_1_0_1());
+        newLeafNode(lv_boolean_5_2, grammarAccess.getRoleQueryAccess().getBooleanFalseKeyword_4_1_0_1());
     }
  
 	    {
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPlayerQueryRule());
+	            $current = createModelElement(grammarAccess.getRoleQueryRule());
 	        }
        		setWithLastConsumed($current, "boolean", lv_boolean_5_2, null);
 	    }

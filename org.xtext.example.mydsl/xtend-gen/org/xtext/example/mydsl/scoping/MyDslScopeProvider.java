@@ -15,8 +15,8 @@ import org.xtext.example.mydsl.myDsl.Communication;
 import org.xtext.example.mydsl.myDsl.Function;
 import org.xtext.example.mydsl.myDsl.Interview;
 import org.xtext.example.mydsl.myDsl.Message;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.State;
 import org.xtext.example.mydsl.myDsl.Systemtype;
@@ -74,7 +74,7 @@ public class MyDslScopeProvider extends AbstractDeclarativeScopeProvider {
     return Scopes.scopeFor(scope);
   }
   
-  public IScope scope_PlayerQuery_status(final PlayerQuery query, final EReference ref) {
+  public IScope scope_RoleQuery_state(final RoleQuery query, final EReference ref) {
     final ArrayList<State> scope = new ArrayList<State>();
     Role _player = query.getPlayer();
     TypeDefinition _type = _player.getType();

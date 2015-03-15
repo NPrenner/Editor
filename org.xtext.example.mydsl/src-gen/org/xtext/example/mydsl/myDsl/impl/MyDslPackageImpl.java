@@ -29,13 +29,13 @@ import org.xtext.example.mydsl.myDsl.Message;
 import org.xtext.example.mydsl.myDsl.MyDslFactory;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
 import org.xtext.example.mydsl.myDsl.Parameter;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.ProcessChartElements;
 import org.xtext.example.mydsl.myDsl.ProcessElements;
 import org.xtext.example.mydsl.myDsl.ProcessStartElements;
 import org.xtext.example.mydsl.myDsl.Query;
 import org.xtext.example.mydsl.myDsl.QueryTypes;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.StarTimeAlternative;
 import org.xtext.example.mydsl.myDsl.StartAlternative;
@@ -291,7 +291,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass playerQueryEClass = null;
+  private EClass roleQueryEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -1179,9 +1179,9 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getPlayerQuery()
+  public EClass getRoleQuery()
   {
-    return playerQueryEClass;
+    return roleQueryEClass;
   }
 
   /**
@@ -1189,9 +1189,9 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPlayerQuery_Player()
+  public EReference getRoleQuery_Player()
   {
-    return (EReference)playerQueryEClass.getEStructuralFeatures().get(0);
+    return (EReference)roleQueryEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -1199,9 +1199,9 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPlayerQuery_Status()
+  public EReference getRoleQuery_State()
   {
-    return (EReference)playerQueryEClass.getEStructuralFeatures().get(1);
+    return (EReference)roleQueryEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -1209,9 +1209,9 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPlayerQuery_Boolean()
+  public EAttribute getRoleQuery_Boolean()
   {
-    return (EAttribute)playerQueryEClass.getEStructuralFeatures().get(2);
+    return (EAttribute)roleQueryEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1606,10 +1606,10 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     braceQueryEClass = createEClass(BRACE_QUERY);
     createEReference(braceQueryEClass, BRACE_QUERY__QUERIES);
 
-    playerQueryEClass = createEClass(PLAYER_QUERY);
-    createEReference(playerQueryEClass, PLAYER_QUERY__PLAYER);
-    createEReference(playerQueryEClass, PLAYER_QUERY__STATUS);
-    createEAttribute(playerQueryEClass, PLAYER_QUERY__BOOLEAN);
+    roleQueryEClass = createEClass(ROLE_QUERY);
+    createEReference(roleQueryEClass, ROLE_QUERY__PLAYER);
+    createEReference(roleQueryEClass, ROLE_QUERY__STATE);
+    createEAttribute(roleQueryEClass, ROLE_QUERY__BOOLEAN);
 
     communicationEClass = createEClass(COMMUNICATION);
     createEAttribute(communicationEClass, COMMUNICATION__IMPORTANCE);
@@ -1692,7 +1692,7 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     booleanQueryEClass.getESuperTypes().add(this.getQuery());
     dataQueryEClass.getESuperTypes().add(this.getQuery());
     braceQueryEClass.getESuperTypes().add(this.getQueryTypes());
-    playerQueryEClass.getESuperTypes().add(this.getQuery());
+    roleQueryEClass.getESuperTypes().add(this.getQuery());
     communicationEClass.getESuperTypes().add(this.getProcessElements());
     communicationEClass.getESuperTypes().add(this.getProcessChartElements());
     activityEClass.getESuperTypes().add(this.getProcessElements());
@@ -1814,10 +1814,10 @@ public class MyDslPackageImpl extends EPackageImpl implements MyDslPackage
     initEClass(braceQueryEClass, BraceQuery.class, "BraceQuery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getBraceQuery_Queries(), this.getQueryTypes(), null, "queries", null, 0, -1, BraceQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(playerQueryEClass, PlayerQuery.class, "PlayerQuery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getPlayerQuery_Player(), this.getRole(), null, "player", null, 0, 1, PlayerQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getPlayerQuery_Status(), this.getState(), null, "status", null, 0, 1, PlayerQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPlayerQuery_Boolean(), ecorePackage.getEString(), "boolean", null, 0, 1, PlayerQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(roleQueryEClass, RoleQuery.class, "RoleQuery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getRoleQuery_Player(), this.getRole(), null, "player", null, 0, 1, RoleQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRoleQuery_State(), this.getState(), null, "state", null, 0, 1, RoleQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getRoleQuery_Boolean(), ecorePackage.getEString(), "boolean", null, 0, 1, RoleQuery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(communicationEClass, Communication.class, "Communication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getCommunication_Importance(), ecorePackage.getEString(), "importance", null, 0, 1, Communication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

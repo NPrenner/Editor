@@ -26,13 +26,13 @@ import org.xtext.example.mydsl.myDsl.Loop;
 import org.xtext.example.mydsl.myDsl.Message;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
 import org.xtext.example.mydsl.myDsl.Parameter;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.ProcessChartElements;
 import org.xtext.example.mydsl.myDsl.ProcessElements;
 import org.xtext.example.mydsl.myDsl.ProcessStartElements;
 import org.xtext.example.mydsl.myDsl.Query;
 import org.xtext.example.mydsl.myDsl.QueryTypes;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.StarTimeAlternative;
 import org.xtext.example.mydsl.myDsl.StartAlternative;
@@ -366,12 +366,12 @@ public class MyDslSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case MyDslPackage.PLAYER_QUERY:
+      case MyDslPackage.ROLE_QUERY:
       {
-        PlayerQuery playerQuery = (PlayerQuery)theEObject;
-        T result = casePlayerQuery(playerQuery);
-        if (result == null) result = caseQuery(playerQuery);
-        if (result == null) result = caseQueryTypes(playerQuery);
+        RoleQuery roleQuery = (RoleQuery)theEObject;
+        T result = caseRoleQuery(roleQuery);
+        if (result == null) result = caseQuery(roleQuery);
+        if (result == null) result = caseQueryTypes(roleQuery);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -944,17 +944,17 @@ public class MyDslSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Player Query</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Role Query</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Player Query</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Role Query</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePlayerQuery(PlayerQuery object)
+  public T caseRoleQuery(RoleQuery object)
   {
     return null;
   }

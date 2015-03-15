@@ -26,7 +26,7 @@ public class MyDslSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_BraceQuery_ExclamationMarkKeyword_0_q;
 	protected AbstractElementAlias match_IFQuery_AmpersandAmpersandKeyword_3_0_1_or_VerticalLineVerticalLineKeyword_3_0_0;
 	protected AbstractElementAlias match_IFQuery___ElseKeyword_8_0_LeftCurlyBracketKeyword_8_1_RightCurlyBracketKeyword_8_3__q;
-	protected AbstractElementAlias match_PlayerQuery_ExclamationMarkKeyword_0_q;
+	protected AbstractElementAlias match_RoleQuery_ExclamationMarkKeyword_0_q;
 	protected AbstractElementAlias match_StartAlternative___OrKeyword_9_0_LeftCurlyBracketKeyword_9_1_RightCurlyBracketKeyword_9_3__a;
 	protected AbstractElementAlias match_StartAlternative___RightCurlyBracketKeyword_9_3_OrKeyword_9_0_LeftCurlyBracketKeyword_9_1__a;
 	protected AbstractElementAlias match_StartAlternative___RightCurlyBracketKeyword_9_3_OrKeyword_9_0_LeftCurlyBracketKeyword_9_1__p;
@@ -46,7 +46,7 @@ public class MyDslSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_BraceQuery_ExclamationMarkKeyword_0_q = new TokenAlias(false, true, grammarAccess.getBraceQueryAccess().getExclamationMarkKeyword_0());
 		match_IFQuery_AmpersandAmpersandKeyword_3_0_1_or_VerticalLineVerticalLineKeyword_3_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getIFQueryAccess().getAmpersandAmpersandKeyword_3_0_1()), new TokenAlias(false, false, grammarAccess.getIFQueryAccess().getVerticalLineVerticalLineKeyword_3_0_0()));
 		match_IFQuery___ElseKeyword_8_0_LeftCurlyBracketKeyword_8_1_RightCurlyBracketKeyword_8_3__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getIFQueryAccess().getElseKeyword_8_0()), new TokenAlias(false, false, grammarAccess.getIFQueryAccess().getLeftCurlyBracketKeyword_8_1()), new TokenAlias(false, false, grammarAccess.getIFQueryAccess().getRightCurlyBracketKeyword_8_3()));
-		match_PlayerQuery_ExclamationMarkKeyword_0_q = new TokenAlias(false, true, grammarAccess.getPlayerQueryAccess().getExclamationMarkKeyword_0());
+		match_RoleQuery_ExclamationMarkKeyword_0_q = new TokenAlias(false, true, grammarAccess.getRoleQueryAccess().getExclamationMarkKeyword_0());
 		match_StartAlternative___OrKeyword_9_0_LeftCurlyBracketKeyword_9_1_RightCurlyBracketKeyword_9_3__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getOrKeyword_9_0()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getLeftCurlyBracketKeyword_9_1()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getRightCurlyBracketKeyword_9_3()));
 		match_StartAlternative___RightCurlyBracketKeyword_9_3_OrKeyword_9_0_LeftCurlyBracketKeyword_9_1__a = new GroupAlias(true, true, new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getRightCurlyBracketKeyword_9_3()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getOrKeyword_9_0()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getLeftCurlyBracketKeyword_9_1()));
 		match_StartAlternative___RightCurlyBracketKeyword_9_3_OrKeyword_9_0_LeftCurlyBracketKeyword_9_1__p = new GroupAlias(true, false, new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getRightCurlyBracketKeyword_9_3()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getOrKeyword_9_0()), new TokenAlias(false, false, grammarAccess.getStartAlternativeAccess().getLeftCurlyBracketKeyword_9_1()));
@@ -83,8 +83,8 @@ public class MyDslSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_IFQuery_AmpersandAmpersandKeyword_3_0_1_or_VerticalLineVerticalLineKeyword_3_0_0(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_IFQuery___ElseKeyword_8_0_LeftCurlyBracketKeyword_8_1_RightCurlyBracketKeyword_8_3__q.equals(syntax))
 				emit_IFQuery___ElseKeyword_8_0_LeftCurlyBracketKeyword_8_1_RightCurlyBracketKeyword_8_3__q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if(match_PlayerQuery_ExclamationMarkKeyword_0_q.equals(syntax))
-				emit_PlayerQuery_ExclamationMarkKeyword_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_RoleQuery_ExclamationMarkKeyword_0_q.equals(syntax))
+				emit_RoleQuery_ExclamationMarkKeyword_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_StartAlternative___OrKeyword_9_0_LeftCurlyBracketKeyword_9_1_RightCurlyBracketKeyword_9_3__a.equals(syntax))
 				emit_StartAlternative___OrKeyword_9_0_LeftCurlyBracketKeyword_9_1_RightCurlyBracketKeyword_9_3__a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_StartAlternative___RightCurlyBracketKeyword_9_3_OrKeyword_9_0_LeftCurlyBracketKeyword_9_1__a.equals(syntax))
@@ -165,7 +165,7 @@ public class MyDslSyntacticSequencer extends AbstractSyntacticSequencer {
 	 * Syntax:
 	 *     '!'?
 	 */
-	protected void emit_PlayerQuery_ExclamationMarkKeyword_0_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_RoleQuery_ExclamationMarkKeyword_0_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

@@ -28,13 +28,13 @@ import org.xtext.example.mydsl.myDsl.Loop;
 import org.xtext.example.mydsl.myDsl.Message;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
 import org.xtext.example.mydsl.myDsl.Parameter;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.ProcessChartElements;
 import org.xtext.example.mydsl.myDsl.ProcessElements;
 import org.xtext.example.mydsl.myDsl.ProcessStartElements;
 import org.xtext.example.mydsl.myDsl.Query;
 import org.xtext.example.mydsl.myDsl.QueryTypes;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.StarTimeAlternative;
 import org.xtext.example.mydsl.myDsl.StartAlternative;
@@ -275,9 +275,9 @@ public class MyDslAdapterFactory extends AdapterFactoryImpl
         return createBraceQueryAdapter();
       }
       @Override
-      public Adapter casePlayerQuery(PlayerQuery object)
+      public Adapter caseRoleQuery(RoleQuery object)
       {
-        return createPlayerQueryAdapter();
+        return createRoleQueryAdapter();
       }
       @Override
       public Adapter caseCommunication(Communication object)
@@ -817,16 +817,16 @@ public class MyDslAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.xtext.example.mydsl.myDsl.PlayerQuery <em>Player Query</em>}'.
+   * Creates a new adapter for an object of class '{@link org.xtext.example.mydsl.myDsl.RoleQuery <em>Role Query</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.xtext.example.mydsl.myDsl.PlayerQuery
+   * @see org.xtext.example.mydsl.myDsl.RoleQuery
    * @generated
    */
-  public Adapter createPlayerQueryAdapter()
+  public Adapter createRoleQueryAdapter()
   {
     return null;
   }

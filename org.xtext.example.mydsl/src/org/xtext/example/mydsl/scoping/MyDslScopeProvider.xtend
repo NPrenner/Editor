@@ -15,7 +15,7 @@ import org.xtext.example.mydsl.myDsl.Activity
 import org.xtext.example.mydsl.myDsl.Function
 
 import org.xtext.example.mydsl.myDsl.State
-import org.xtext.example.mydsl.myDsl.PlayerQuery
+import org.xtext.example.mydsl.myDsl.RoleQuery
 import org.xtext.example.mydsl.myDsl.Systemwork
 import org.xtext.example.mydsl.myDsl.Communication
 import org.xtext.example.mydsl.myDsl.Object
@@ -62,7 +62,7 @@ class MyDslScopeProvider extends org.eclipse.xtext.scoping.impl.AbstractDeclarat
 		return Scopes::scopeFor(scope)
 	}
 	
-	def IScope scope_PlayerQuery_status(PlayerQuery query, EReference ref){
+	def IScope scope_RoleQuery_state(RoleQuery query, EReference ref){
 		val scope = new ArrayList<State>()
 		var role = query.player.type as Roletype
 		scope.addAll(role.state)

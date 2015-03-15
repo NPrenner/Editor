@@ -30,13 +30,13 @@ import org.xtext.example.mydsl.myDsl.Message;
 import org.xtext.example.mydsl.myDsl.MyDslFactory;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
 import org.xtext.example.mydsl.myDsl.Parameter;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.ProcessChartElements;
 import org.xtext.example.mydsl.myDsl.ProcessElements;
 import org.xtext.example.mydsl.myDsl.ProcessStartElements;
 import org.xtext.example.mydsl.myDsl.Query;
 import org.xtext.example.mydsl.myDsl.QueryTypes;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.StarTimeAlternative;
 import org.xtext.example.mydsl.myDsl.StartAlternative;
@@ -133,7 +133,7 @@ public class MyDslFactoryImpl extends EFactoryImpl implements MyDslFactory
       case MyDslPackage.BOOLEAN_QUERY: return createBooleanQuery();
       case MyDslPackage.DATA_QUERY: return createDataQuery();
       case MyDslPackage.BRACE_QUERY: return createBraceQuery();
-      case MyDslPackage.PLAYER_QUERY: return createPlayerQuery();
+      case MyDslPackage.ROLE_QUERY: return createRoleQuery();
       case MyDslPackage.COMMUNICATION: return createCommunication();
       case MyDslPackage.ACTIVITY: return createActivity();
       case MyDslPackage.SYSTEMWORK: return createSystemwork();
@@ -511,10 +511,10 @@ public class MyDslFactoryImpl extends EFactoryImpl implements MyDslFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public PlayerQuery createPlayerQuery()
+  public RoleQuery createRoleQuery()
   {
-    PlayerQueryImpl playerQuery = new PlayerQueryImpl();
-    return playerQuery;
+    RoleQueryImpl roleQuery = new RoleQueryImpl();
+    return roleQuery;
   }
 
   /**

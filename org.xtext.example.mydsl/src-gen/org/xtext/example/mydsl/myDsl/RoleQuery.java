@@ -5,23 +5,23 @@ package org.xtext.example.mydsl.myDsl;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Player Query</b></em>'.
+ * A representation of the model object '<em><b>Role Query</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getPlayer <em>Player</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getStatus <em>Status</em>}</li>
- *   <li>{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getBoolean <em>Boolean</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.RoleQuery#getPlayer <em>Player</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.RoleQuery#getState <em>State</em>}</li>
+ *   <li>{@link org.xtext.example.mydsl.myDsl.RoleQuery#getBoolean <em>Boolean</em>}</li>
  * </ul>
  * </p>
  *
- * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getPlayerQuery()
+ * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRoleQuery()
  * @model
  * @generated
  */
-public interface PlayerQuery extends Query
+public interface RoleQuery extends Query
 {
   /**
    * Returns the value of the '<em><b>Player</b></em>' reference.
@@ -33,14 +33,14 @@ public interface PlayerQuery extends Query
    * <!-- end-user-doc -->
    * @return the value of the '<em>Player</em>' reference.
    * @see #setPlayer(Role)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getPlayerQuery_Player()
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRoleQuery_Player()
    * @model
    * @generated
    */
   Role getPlayer();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getPlayer <em>Player</em>}' reference.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getPlayer <em>Player</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Player</em>' reference.
@@ -50,30 +50,30 @@ public interface PlayerQuery extends Query
   void setPlayer(Role value);
 
   /**
-   * Returns the value of the '<em><b>Status</b></em>' reference.
+   * Returns the value of the '<em><b>State</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Status</em>' reference isn't clear,
+   * If the meaning of the '<em>State</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Status</em>' reference.
-   * @see #setStatus(State)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getPlayerQuery_Status()
+   * @return the value of the '<em>State</em>' reference.
+   * @see #setState(State)
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRoleQuery_State()
    * @model
    * @generated
    */
-  State getStatus();
+  State getState();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getStatus <em>Status</em>}' reference.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getState <em>State</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Status</em>' reference.
-   * @see #getStatus()
+   * @param value the new value of the '<em>State</em>' reference.
+   * @see #getState()
    * @generated
    */
-  void setStatus(State value);
+  void setState(State value);
 
   /**
    * Returns the value of the '<em><b>Boolean</b></em>' attribute.
@@ -85,14 +85,14 @@ public interface PlayerQuery extends Query
    * <!-- end-user-doc -->
    * @return the value of the '<em>Boolean</em>' attribute.
    * @see #setBoolean(String)
-   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getPlayerQuery_Boolean()
+   * @see org.xtext.example.mydsl.myDsl.MyDslPackage#getRoleQuery_Boolean()
    * @model
    * @generated
    */
   String getBoolean();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.PlayerQuery#getBoolean <em>Boolean</em>}' attribute.
+   * Sets the value of the '{@link org.xtext.example.mydsl.myDsl.RoleQuery#getBoolean <em>Boolean</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Boolean</em>' attribute.
@@ -101,4 +101,4 @@ public interface PlayerQuery extends Query
    */
   void setBoolean(String value);
 
-} // PlayerQuery
+} // RoleQuery

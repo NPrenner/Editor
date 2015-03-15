@@ -52,7 +52,7 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getBooleanQueryAccess().getBooleanAlternatives_2_1_0(), "rule__BooleanQuery__BooleanAlternatives_2_1_0");
 					put(grammarAccess.getDataQueryAccess().getConditionAlternatives_2_0(), "rule__DataQuery__ConditionAlternatives_2_0");
 					put(grammarAccess.getBraceQueryAccess().getAlternatives_3_0(), "rule__BraceQuery__Alternatives_3_0");
-					put(grammarAccess.getPlayerQueryAccess().getBooleanAlternatives_4_1_0(), "rule__PlayerQuery__BooleanAlternatives_4_1_0");
+					put(grammarAccess.getRoleQueryAccess().getBooleanAlternatives_4_1_0(), "rule__RoleQuery__BooleanAlternatives_4_1_0");
 					put(grammarAccess.getCommunicationAccess().getImportanceAlternatives_0_0(), "rule__Communication__ImportanceAlternatives_0_0");
 					put(grammarAccess.getCommunicationAccess().getExecutionAlternatives_2_0(), "rule__Communication__ExecutionAlternatives_2_0");
 					put(grammarAccess.getActivityAccess().getImportanceAlternatives_0_0(), "rule__Activity__ImportanceAlternatives_0_0");
@@ -98,8 +98,8 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDataQueryAccess().getGroup(), "rule__DataQuery__Group__0");
 					put(grammarAccess.getBraceQueryAccess().getGroup(), "rule__BraceQuery__Group__0");
 					put(grammarAccess.getBraceQueryAccess().getGroup_3(), "rule__BraceQuery__Group_3__0");
-					put(grammarAccess.getPlayerQueryAccess().getGroup(), "rule__PlayerQuery__Group__0");
-					put(grammarAccess.getPlayerQueryAccess().getGroup_4(), "rule__PlayerQuery__Group_4__0");
+					put(grammarAccess.getRoleQueryAccess().getGroup(), "rule__RoleQuery__Group__0");
+					put(grammarAccess.getRoleQueryAccess().getGroup_4(), "rule__RoleQuery__Group_4__0");
 					put(grammarAccess.getCommunicationAccess().getGroup(), "rule__Communication__Group__0");
 					put(grammarAccess.getCommunicationAccess().getGroup_9(), "rule__Communication__Group_9__0");
 					put(grammarAccess.getCommunicationAccess().getGroup_9_1(), "rule__Communication__Group_9_1__0");
@@ -183,9 +183,9 @@ public class MyDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDataQueryAccess().getObjectTwoAssignment_3(), "rule__DataQuery__ObjectTwoAssignment_3");
 					put(grammarAccess.getBraceQueryAccess().getQueriesAssignment_2(), "rule__BraceQuery__QueriesAssignment_2");
 					put(grammarAccess.getBraceQueryAccess().getQueriesAssignment_3_1(), "rule__BraceQuery__QueriesAssignment_3_1");
-					put(grammarAccess.getPlayerQueryAccess().getPlayerAssignment_1(), "rule__PlayerQuery__PlayerAssignment_1");
-					put(grammarAccess.getPlayerQueryAccess().getStatusAssignment_3(), "rule__PlayerQuery__StatusAssignment_3");
-					put(grammarAccess.getPlayerQueryAccess().getBooleanAssignment_4_1(), "rule__PlayerQuery__BooleanAssignment_4_1");
+					put(grammarAccess.getRoleQueryAccess().getPlayerAssignment_1(), "rule__RoleQuery__PlayerAssignment_1");
+					put(grammarAccess.getRoleQueryAccess().getStateAssignment_3(), "rule__RoleQuery__StateAssignment_3");
+					put(grammarAccess.getRoleQueryAccess().getBooleanAssignment_4_1(), "rule__RoleQuery__BooleanAssignment_4_1");
 					put(grammarAccess.getCommunicationAccess().getImportanceAssignment_0(), "rule__Communication__ImportanceAssignment_0");
 					put(grammarAccess.getCommunicationAccess().getSenderAssignment_1(), "rule__Communication__SenderAssignment_1");
 					put(grammarAccess.getCommunicationAccess().getExecutionAssignment_2(), "rule__Communication__ExecutionAssignment_2");

@@ -6117,13 +6117,13 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQuery"
-    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2497:1: ruleQuery returns [EObject current=null] : (this_DataQuery_0= ruleDataQuery | this_PlayerQuery_1= rulePlayerQuery | this_BooleanQuery_2= ruleBooleanQuery ) ;
+    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2497:1: ruleQuery returns [EObject current=null] : (this_DataQuery_0= ruleDataQuery | this_RoleQuery_1= ruleRoleQuery | this_BooleanQuery_2= ruleBooleanQuery ) ;
     public final EObject ruleQuery() throws RecognitionException {
         EObject current = null;
 
         EObject this_DataQuery_0 = null;
 
-        EObject this_PlayerQuery_1 = null;
+        EObject this_RoleQuery_1 = null;
 
         EObject this_BooleanQuery_2 = null;
 
@@ -6131,10 +6131,10 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2500:28: ( (this_DataQuery_0= ruleDataQuery | this_PlayerQuery_1= rulePlayerQuery | this_BooleanQuery_2= ruleBooleanQuery ) )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2501:1: (this_DataQuery_0= ruleDataQuery | this_PlayerQuery_1= rulePlayerQuery | this_BooleanQuery_2= ruleBooleanQuery )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2500:28: ( (this_DataQuery_0= ruleDataQuery | this_RoleQuery_1= ruleRoleQuery | this_BooleanQuery_2= ruleBooleanQuery ) )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2501:1: (this_DataQuery_0= ruleDataQuery | this_RoleQuery_1= ruleRoleQuery | this_BooleanQuery_2= ruleBooleanQuery )
             {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2501:1: (this_DataQuery_0= ruleDataQuery | this_PlayerQuery_1= rulePlayerQuery | this_BooleanQuery_2= ruleBooleanQuery )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2501:1: (this_DataQuery_0= ruleDataQuery | this_RoleQuery_1= ruleRoleQuery | this_BooleanQuery_2= ruleBooleanQuery )
             int alt54=3;
             int LA54_0 = input.LA(1);
 
@@ -6234,18 +6234,18 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2512:5: this_PlayerQuery_1= rulePlayerQuery
+                    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2512:5: this_RoleQuery_1= ruleRoleQuery
                     {
                      
-                            newCompositeNode(grammarAccess.getQueryAccess().getPlayerQueryParserRuleCall_1()); 
+                            newCompositeNode(grammarAccess.getQueryAccess().getRoleQueryParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_rulePlayerQuery_in_ruleQuery5775);
-                    this_PlayerQuery_1=rulePlayerQuery();
+                    pushFollow(FOLLOW_ruleRoleQuery_in_ruleQuery5775);
+                    this_RoleQuery_1=ruleRoleQuery();
 
                     state._fsp--;
 
                      
-                            current = this_PlayerQuery_1; 
+                            current = this_RoleQuery_1; 
                             afterParserOrEnumRuleCall();
                         
 
@@ -6942,26 +6942,26 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleBraceQuery"
 
 
-    // $ANTLR start "entryRulePlayerQuery"
-    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2780:1: entryRulePlayerQuery returns [EObject current=null] : iv_rulePlayerQuery= rulePlayerQuery EOF ;
-    public final EObject entryRulePlayerQuery() throws RecognitionException {
+    // $ANTLR start "entryRuleRoleQuery"
+    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2780:1: entryRuleRoleQuery returns [EObject current=null] : iv_ruleRoleQuery= ruleRoleQuery EOF ;
+    public final EObject entryRuleRoleQuery() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_rulePlayerQuery = null;
+        EObject iv_ruleRoleQuery = null;
 
 
         try {
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2781:2: (iv_rulePlayerQuery= rulePlayerQuery EOF )
-            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2782:2: iv_rulePlayerQuery= rulePlayerQuery EOF
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2781:2: (iv_ruleRoleQuery= ruleRoleQuery EOF )
+            // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2782:2: iv_ruleRoleQuery= ruleRoleQuery EOF
             {
-             newCompositeNode(grammarAccess.getPlayerQueryRule()); 
-            pushFollow(FOLLOW_rulePlayerQuery_in_entryRulePlayerQuery6418);
-            iv_rulePlayerQuery=rulePlayerQuery();
+             newCompositeNode(grammarAccess.getRoleQueryRule()); 
+            pushFollow(FOLLOW_ruleRoleQuery_in_entryRuleRoleQuery6418);
+            iv_ruleRoleQuery=ruleRoleQuery();
 
             state._fsp--;
 
-             current =iv_rulePlayerQuery; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePlayerQuery6428); 
+             current =iv_ruleRoleQuery; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRoleQuery6428); 
 
             }
 
@@ -6975,12 +6975,12 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         }
         return current;
     }
-    // $ANTLR end "entryRulePlayerQuery"
+    // $ANTLR end "entryRuleRoleQuery"
 
 
-    // $ANTLR start "rulePlayerQuery"
-    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2789:1: rulePlayerQuery returns [EObject current=null] : ( (otherlv_0= '!' )? ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) (otherlv_4= 'is' ( ( (lv_boolean_5_1= 'true' | lv_boolean_5_2= 'false' ) ) ) )? ) ;
-    public final EObject rulePlayerQuery() throws RecognitionException {
+    // $ANTLR start "ruleRoleQuery"
+    // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2789:1: ruleRoleQuery returns [EObject current=null] : ( (otherlv_0= '!' )? ( (otherlv_1= RULE_ID ) ) otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) (otherlv_4= 'is' ( ( (lv_boolean_5_1= 'true' | lv_boolean_5_2= 'false' ) ) ) )? ) ;
+    public final EObject ruleRoleQuery() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
@@ -7011,9 +7011,9 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2793:4: otherlv_0= '!'
                     {
-                    otherlv_0=(Token)match(input,56,FOLLOW_56_in_rulePlayerQuery6466); 
+                    otherlv_0=(Token)match(input,56,FOLLOW_56_in_ruleRoleQuery6466); 
 
-                        	newLeafNode(otherlv_0, grammarAccess.getPlayerQueryAccess().getExclamationMarkKeyword_0());
+                        	newLeafNode(otherlv_0, grammarAccess.getRoleQueryAccess().getExclamationMarkKeyword_0());
                         
 
                     }
@@ -7029,12 +7029,12 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             {
 
             			if (current==null) {
-            	            current = createModelElement(grammarAccess.getPlayerQueryRule());
+            	            current = createModelElement(grammarAccess.getRoleQueryRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePlayerQuery6488); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRoleQuery6488); 
 
-            		newLeafNode(otherlv_1, grammarAccess.getPlayerQueryAccess().getPlayerRoleCrossReference_1_0()); 
+            		newLeafNode(otherlv_1, grammarAccess.getRoleQueryAccess().getPlayerRoleCrossReference_1_0()); 
             	
 
             }
@@ -7042,9 +7042,9 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,62,FOLLOW_62_in_rulePlayerQuery6500); 
+            otherlv_2=(Token)match(input,62,FOLLOW_62_in_ruleRoleQuery6500); 
 
-                	newLeafNode(otherlv_2, grammarAccess.getPlayerQueryAccess().getFullStopKeyword_2());
+                	newLeafNode(otherlv_2, grammarAccess.getRoleQueryAccess().getFullStopKeyword_2());
                 
             // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2814:1: ( (otherlv_3= RULE_ID ) )
             // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2815:1: (otherlv_3= RULE_ID )
@@ -7054,12 +7054,12 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
             {
 
             			if (current==null) {
-            	            current = createModelElement(grammarAccess.getPlayerQueryRule());
+            	            current = createModelElement(grammarAccess.getRoleQueryRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePlayerQuery6520); 
+            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRoleQuery6520); 
 
-            		newLeafNode(otherlv_3, grammarAccess.getPlayerQueryAccess().getStatusStateCrossReference_3_0()); 
+            		newLeafNode(otherlv_3, grammarAccess.getRoleQueryAccess().getStateStateCrossReference_3_0()); 
             	
 
             }
@@ -7078,9 +7078,9 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                 case 1 :
                     // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2827:4: otherlv_4= 'is' ( ( (lv_boolean_5_1= 'true' | lv_boolean_5_2= 'false' ) ) )
                     {
-                    otherlv_4=(Token)match(input,57,FOLLOW_57_in_rulePlayerQuery6533); 
+                    otherlv_4=(Token)match(input,57,FOLLOW_57_in_ruleRoleQuery6533); 
 
-                        	newLeafNode(otherlv_4, grammarAccess.getPlayerQueryAccess().getIsKeyword_4_0());
+                        	newLeafNode(otherlv_4, grammarAccess.getRoleQueryAccess().getIsKeyword_4_0());
                         
                     // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2831:1: ( ( (lv_boolean_5_1= 'true' | lv_boolean_5_2= 'false' ) ) )
                     // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2832:1: ( (lv_boolean_5_1= 'true' | lv_boolean_5_2= 'false' ) )
@@ -7108,13 +7108,13 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                         case 1 :
                             // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2834:3: lv_boolean_5_1= 'true'
                             {
-                            lv_boolean_5_1=(Token)match(input,58,FOLLOW_58_in_rulePlayerQuery6553); 
+                            lv_boolean_5_1=(Token)match(input,58,FOLLOW_58_in_ruleRoleQuery6553); 
 
-                                    newLeafNode(lv_boolean_5_1, grammarAccess.getPlayerQueryAccess().getBooleanTrueKeyword_4_1_0_0());
+                                    newLeafNode(lv_boolean_5_1, grammarAccess.getRoleQueryAccess().getBooleanTrueKeyword_4_1_0_0());
                                 
 
                             	        if (current==null) {
-                            	            current = createModelElement(grammarAccess.getPlayerQueryRule());
+                            	            current = createModelElement(grammarAccess.getRoleQueryRule());
                             	        }
                                    		setWithLastConsumed(current, "boolean", lv_boolean_5_1, null);
                             	    
@@ -7124,13 +7124,13 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
                         case 2 :
                             // ../org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/parser/antlr/internal/InternalMyDsl.g:2846:8: lv_boolean_5_2= 'false'
                             {
-                            lv_boolean_5_2=(Token)match(input,59,FOLLOW_59_in_rulePlayerQuery6582); 
+                            lv_boolean_5_2=(Token)match(input,59,FOLLOW_59_in_ruleRoleQuery6582); 
 
-                                    newLeafNode(lv_boolean_5_2, grammarAccess.getPlayerQueryAccess().getBooleanFalseKeyword_4_1_0_1());
+                                    newLeafNode(lv_boolean_5_2, grammarAccess.getRoleQueryAccess().getBooleanFalseKeyword_4_1_0_1());
                                 
 
                             	        if (current==null) {
-                            	            current = createModelElement(grammarAccess.getPlayerQueryRule());
+                            	            current = createModelElement(grammarAccess.getRoleQueryRule());
                             	        }
                                    		setWithLastConsumed(current, "boolean", lv_boolean_5_2, null);
                             	    
@@ -7169,7 +7169,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
         }
         return current;
     }
-    // $ANTLR end "rulePlayerQuery"
+    // $ANTLR end "ruleRoleQuery"
 
 
     // $ANTLR start "entryRuleCommunication"
@@ -8817,7 +8817,7 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleQuery_in_entryRuleQuery5691 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleQuery5701 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleDataQuery_in_ruleQuery5748 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePlayerQuery_in_ruleQuery5775 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRoleQuery_in_ruleQuery5775 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleBooleanQuery_in_ruleQuery5802 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleBooleanQuery_in_entryRuleBooleanQuery5837 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleBooleanQuery5847 = new BitSet(new long[]{0x0000000000000002L});
@@ -8842,15 +8842,15 @@ public class InternalMyDslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_54_in_ruleBraceQuery6346 = new BitSet(new long[]{0x0100000008000010L});
     public static final BitSet FOLLOW_ruleQueryTypes_in_ruleBraceQuery6368 = new BitSet(new long[]{0x0060000020000000L});
     public static final BitSet FOLLOW_29_in_ruleBraceQuery6382 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePlayerQuery_in_entryRulePlayerQuery6418 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePlayerQuery6428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_56_in_rulePlayerQuery6466 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePlayerQuery6488 = new BitSet(new long[]{0x4000000000000000L});
-    public static final BitSet FOLLOW_62_in_rulePlayerQuery6500 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePlayerQuery6520 = new BitSet(new long[]{0x0200000000000002L});
-    public static final BitSet FOLLOW_57_in_rulePlayerQuery6533 = new BitSet(new long[]{0x0C00000000000000L});
-    public static final BitSet FOLLOW_58_in_rulePlayerQuery6553 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_rulePlayerQuery6582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRoleQuery_in_entryRuleRoleQuery6418 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRoleQuery6428 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_56_in_ruleRoleQuery6466 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRoleQuery6488 = new BitSet(new long[]{0x4000000000000000L});
+    public static final BitSet FOLLOW_62_in_ruleRoleQuery6500 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRoleQuery6520 = new BitSet(new long[]{0x0200000000000002L});
+    public static final BitSet FOLLOW_57_in_ruleRoleQuery6533 = new BitSet(new long[]{0x0C00000000000000L});
+    public static final BitSet FOLLOW_58_in_ruleRoleQuery6553 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_ruleRoleQuery6582 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleCommunication_in_entryRuleCommunication6636 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleCommunication6646 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_63_in_ruleCommunication6691 = new BitSet(new long[]{0x0000000000000010L});

@@ -1580,21 +1580,21 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Query");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cDataQueryParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cPlayerQueryParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cRoleQueryParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		private final RuleCall cBooleanQueryParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
 		//Query:
-		//	DataQuery | PlayerQuery | BooleanQuery;
+		//	DataQuery | RoleQuery | BooleanQuery;
 		public ParserRule getRule() { return rule; }
 
-		//DataQuery | PlayerQuery | BooleanQuery
+		//DataQuery | RoleQuery | BooleanQuery
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//DataQuery
 		public RuleCall getDataQueryParserRuleCall_0() { return cDataQueryParserRuleCall_0; }
 
-		//PlayerQuery
-		public RuleCall getPlayerQueryParserRuleCall_1() { return cPlayerQueryParserRuleCall_1; }
+		//RoleQuery
+		public RuleCall getRoleQueryParserRuleCall_1() { return cRoleQueryParserRuleCall_1; }
 
 		//BooleanQuery
 		public RuleCall getBooleanQueryParserRuleCall_2() { return cBooleanQueryParserRuleCall_2; }
@@ -1768,17 +1768,17 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 	}
 
-	public class PlayerQueryElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PlayerQuery");
+	public class RoleQueryElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RoleQuery");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cExclamationMarkKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cPlayerAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final CrossReference cPlayerRoleCrossReference_1_0 = (CrossReference)cPlayerAssignment_1.eContents().get(0);
 		private final RuleCall cPlayerRoleIDTerminalRuleCall_1_0_1 = (RuleCall)cPlayerRoleCrossReference_1_0.eContents().get(1);
 		private final Keyword cFullStopKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cStatusAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cStatusStateCrossReference_3_0 = (CrossReference)cStatusAssignment_3.eContents().get(0);
-		private final RuleCall cStatusStateIDTerminalRuleCall_3_0_1 = (RuleCall)cStatusStateCrossReference_3_0.eContents().get(1);
+		private final Assignment cStateAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final CrossReference cStateStateCrossReference_3_0 = (CrossReference)cStateAssignment_3.eContents().get(0);
+		private final RuleCall cStateStateIDTerminalRuleCall_3_0_1 = (RuleCall)cStateStateCrossReference_3_0.eContents().get(1);
 		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
 		private final Keyword cIsKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
 		private final Assignment cBooleanAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
@@ -1786,11 +1786,11 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cBooleanTrueKeyword_4_1_0_0 = (Keyword)cBooleanAlternatives_4_1_0.eContents().get(0);
 		private final Keyword cBooleanFalseKeyword_4_1_0_1 = (Keyword)cBooleanAlternatives_4_1_0.eContents().get(1);
 		
-		//PlayerQuery:
-		//	"!"? player=[Role] "." status=[State] ("is" boolean=("true" | "false"))?;
+		//RoleQuery:
+		//	"!"? player=[Role] "." state=[State] ("is" boolean=("true" | "false"))?;
 		public ParserRule getRule() { return rule; }
 
-		//"!"? player=[Role] "." status=[State] ("is" boolean=("true" | "false"))?
+		//"!"? player=[Role] "." state=[State] ("is" boolean=("true" | "false"))?
 		public Group getGroup() { return cGroup; }
 
 		//"!"?
@@ -1808,14 +1808,14 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"."
 		public Keyword getFullStopKeyword_2() { return cFullStopKeyword_2; }
 
-		//status=[State]
-		public Assignment getStatusAssignment_3() { return cStatusAssignment_3; }
+		//state=[State]
+		public Assignment getStateAssignment_3() { return cStateAssignment_3; }
 
 		//[State]
-		public CrossReference getStatusStateCrossReference_3_0() { return cStatusStateCrossReference_3_0; }
+		public CrossReference getStateStateCrossReference_3_0() { return cStateStateCrossReference_3_0; }
 
 		//ID
-		public RuleCall getStatusStateIDTerminalRuleCall_3_0_1() { return cStatusStateIDTerminalRuleCall_3_0_1; }
+		public RuleCall getStateStateIDTerminalRuleCall_3_0_1() { return cStateStateIDTerminalRuleCall_3_0_1; }
 
 		//("is" boolean=("true" | "false"))?
 		public Group getGroup_4() { return cGroup_4; }
@@ -2312,7 +2312,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	private final BooleanQueryElements pBooleanQuery;
 	private final DataQueryElements pDataQuery;
 	private final BraceQueryElements pBraceQuery;
-	private final PlayerQueryElements pPlayerQuery;
+	private final RoleQueryElements pRoleQuery;
 	private final CommunicationElements pCommunication;
 	private final ActivityElements pActivity;
 	private final SystemworkElements pSystemwork;
@@ -2360,7 +2360,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pBooleanQuery = new BooleanQueryElements();
 		this.pDataQuery = new DataQueryElements();
 		this.pBraceQuery = new BraceQueryElements();
-		this.pPlayerQuery = new PlayerQueryElements();
+		this.pRoleQuery = new RoleQueryElements();
 		this.pCommunication = new CommunicationElements();
 		this.pActivity = new ActivityElements();
 		this.pSystemwork = new SystemworkElements();
@@ -2692,7 +2692,7 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Query:
-	//	DataQuery | PlayerQuery | BooleanQuery;
+	//	DataQuery | RoleQuery | BooleanQuery;
 	public QueryElements getQueryAccess() {
 		return pQuery;
 	}
@@ -2731,14 +2731,14 @@ public class MyDslGrammarAccess extends AbstractGrammarElementFinder {
 		return getBraceQueryAccess().getRule();
 	}
 
-	//PlayerQuery:
-	//	"!"? player=[Role] "." status=[State] ("is" boolean=("true" | "false"))?;
-	public PlayerQueryElements getPlayerQueryAccess() {
-		return pPlayerQuery;
+	//RoleQuery:
+	//	"!"? player=[Role] "." state=[State] ("is" boolean=("true" | "false"))?;
+	public RoleQueryElements getRoleQueryAccess() {
+		return pRoleQuery;
 	}
 	
-	public ParserRule getPlayerQueryRule() {
-		return getPlayerQueryAccess().getRule();
+	public ParserRule getRoleQueryRule() {
+		return getRoleQueryAccess().getRule();
 	}
 
 	//Communication:

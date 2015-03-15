@@ -124,9 +124,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="queries" upperBound="-1"
         eType="#//QueryTypes" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlayerQuery" eSuperTypes="#//Query">
+  <eClassifiers xsi:type="ecore:EClass" name="RoleQuery" eSuperTypes="#//Query">
     <eStructuralFeatures xsi:type="ecore:EReference" name="player" eType="#//Role"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//State"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="state" eType="#//State"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="boolean" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Communication" eSuperTypes="#//ProcessElements #//ProcessChartElements">

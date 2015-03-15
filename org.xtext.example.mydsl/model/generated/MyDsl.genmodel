@@ -108,10 +108,10 @@
     <genClasses ecoreClass="MyDsl.ecore#//BraceQuery">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MyDsl.ecore#//BraceQuery/queries"/>
     </genClasses>
-    <genClasses ecoreClass="MyDsl.ecore#//PlayerQuery">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MyDsl.ecore#//PlayerQuery/player"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MyDsl.ecore#//PlayerQuery/status"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MyDsl.ecore#//PlayerQuery/boolean"/>
+    <genClasses ecoreClass="MyDsl.ecore#//RoleQuery">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MyDsl.ecore#//RoleQuery/player"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MyDsl.ecore#//RoleQuery/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MyDsl.ecore#//RoleQuery/boolean"/>
     </genClasses>
     <genClasses ecoreClass="MyDsl.ecore#//Communication">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MyDsl.ecore#//Communication/importance"/>

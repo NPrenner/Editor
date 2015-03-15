@@ -187,7 +187,7 @@ QueryTypes:
 ;
 
 Query:
-	DataQuery | PlayerQuery | BooleanQuery
+	DataQuery | RoleQuery | BooleanQuery
 ;
 
 BooleanQuery:
@@ -202,8 +202,8 @@ BraceQuery:
   ('!')?	'(' queries +=  QueryTypes ( ('||'| '&&' ) queries += QueryTypes )* ')'
 ;
 
-PlayerQuery:
-  ('!')? player=[Role] '.' status = [State] ('is' boolean = ('true' | 'false'))? 
+RoleQuery:
+  ('!')? player=[Role] '.' state = [State] ('is' boolean = ('true' | 'false'))? 
 ;
 
  Communication:

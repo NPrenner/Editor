@@ -31,8 +31,8 @@ import org.xtext.example.mydsl.myDsl.Interview;
 import org.xtext.example.mydsl.myDsl.Loop;
 import org.xtext.example.mydsl.myDsl.Message;
 import org.xtext.example.mydsl.myDsl.MyDslPackage;
-import org.xtext.example.mydsl.myDsl.PlayerQuery;
 import org.xtext.example.mydsl.myDsl.Role;
+import org.xtext.example.mydsl.myDsl.RoleQuery;
 import org.xtext.example.mydsl.myDsl.Roletype;
 import org.xtext.example.mydsl.myDsl.StarTimeAlternative;
 import org.xtext.example.mydsl.myDsl.StartAlternative;
@@ -179,18 +179,18 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 					return; 
 				}
 				else break;
-			case MyDslPackage.PLAYER_QUERY:
-				if(context == grammarAccess.getPlayerQueryRule() ||
-				   context == grammarAccess.getQueryRule() ||
-				   context == grammarAccess.getQueryTypesRule()) {
-					sequence_PlayerQuery(context, (PlayerQuery) semanticObject); 
-					return; 
-				}
-				else break;
 			case MyDslPackage.ROLE:
 				if(context == grammarAccess.getObjectRule() ||
 				   context == grammarAccess.getRoleRule()) {
 					sequence_Role(context, (Role) semanticObject); 
+					return; 
+				}
+				else break;
+			case MyDslPackage.ROLE_QUERY:
+				if(context == grammarAccess.getQueryRule() ||
+				   context == grammarAccess.getQueryTypesRule() ||
+				   context == grammarAccess.getRoleQueryRule()) {
+					sequence_RoleQuery(context, (RoleQuery) semanticObject); 
 					return; 
 				}
 				else break;
@@ -465,9 +465,9 @@ public class MyDslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     (player=[Role|ID] status=[State|ID] (boolean='true' | boolean='false')?)
+	 *     (player=[Role|ID] state=[State|ID] (boolean='true' | boolean='false')?)
 	 */
-	protected void sequence_PlayerQuery(EObject context, PlayerQuery semanticObject) {
+	protected void sequence_RoleQuery(EObject context, RoleQuery semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
